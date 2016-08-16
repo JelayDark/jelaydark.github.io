@@ -23,7 +23,11 @@ header ul {
     height: 40px;
     background: url(../img/panel.png) repeat-x;
     margin: 30px 0;
-    font-size: 11pt;
+    /*отступы*/
+    font-size:0; 
+    line-height:0; 
+    letter-spacing:-1px;
+
 }
 
 header li {
@@ -31,6 +35,11 @@ header li {
     text-align: center;
     width: 120px;
     margin: 0;
+    font-size: 11pt;
+    /*отступы*/
+    letter-spacing:normal;
+    display: -moz-inline-stack!important;
+    display:inline-block;
 }
 
 header a {
