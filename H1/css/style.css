@@ -1,20 +1,6 @@
 body {
-    margin: 0;!important
-    padding: 0;!important
-}
-
-.center {
-    text-align:center;
-}
-
-.whoami {
-    color: rgba(31, 31, 31, 0.8);
-}
-
-h1 {
-    text-transform: uppercase;
-    padding-top: 0.5em;
-    margin-top: 0;    
+    margin: 0;
+    padding: 0;
 }
 
 .wrapper {
@@ -23,26 +9,48 @@ h1 {
     font-family: Arial;
 }
 
+.center {
+    text-align:center;
+}
+
+h1 {
+    text-transform: uppercase;
+    padding-top: 0.5em;
+    margin-top: 0;    
+}
+
 img {
     width: 200px;
     height: 200px;
     border: 1px solid;
 }
 
+.whoami {
+    color: rgba(31, 31, 31, 0.8);
+}
+
+hr {
+    height: 0.5px;
+    border: none;  
+}
+
+.firstline {
+    background-color: #CAC8C6;
+}
+
+.secline {
+    background-color: #D3DBD7;
+}
+
+.thline {
+    background-color: #CFC9CA;
+
+}
+
 .paragraph {
     width: 41.5%;
     margin: 0 auto;
     text-align: left;
-}
-
-.with_border {
-    border-top: 1px #D6D9D5 solid;
-    border-bottom: 1px #F0EDF0 solid;
-}
-
-.sec_bord {
-    border-bottom: 1px #E9E6E7 solid;
-    padding-bottom: 18.72px;
 }
 
 .intxt {
