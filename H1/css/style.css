@@ -30,7 +30,7 @@ img {
 }
 
 hr {
-    height: 0.5px;
+    height: 1px;
     border: none;  
 }
 
@@ -43,8 +43,7 @@ hr {
 }
 
 .thline {
-    background-color: #CFC9CA;
-
+    background-color: #CFC9CA; 
 }
 
 .paragraph {
