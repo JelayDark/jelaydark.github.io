@@ -1,0 +1,50 @@
+body {
+    margin: 0;!important
+    padding: 0;!important
+}
+
+.center {
+    text-align:center;
+}
+
+.whoami {
+    color: rgba(31, 31, 31, 0.8);
+}
+
+h1 {
+    text-transform: uppercase;
+    padding-top: 0.5em;
+    margin-top: 0;    
+}
+
+.wrapper {
+    width: 100%;
+    background: #f2f2f2;
+    font-family: Arial;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+}
+
+.paragraph {
+    width: 41.5%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.with_border {
+    border-top: 1px #D6D9D5 solid;
+    border-bottom: 1px #F0EDF0 solid;
+}
+
+.sec_bord {
+    border-bottom: 1px #E9E6E7 solid;
+    padding-bottom: 18.72px;
+}
+
+.intxt {
+    padding-left: 40px;
+}
