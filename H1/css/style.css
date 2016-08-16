@@ -31,7 +31,8 @@ img {
 
 hr {
     height: 1px;
-    border: none;  
+    border: none; 
+    margin: 15px 0;
 }
 
 .firstline {
