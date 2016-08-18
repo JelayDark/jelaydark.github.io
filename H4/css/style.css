@@ -1,0 +1,9 @@
+.wrapper {
+    background-color: #199bb7;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+}
+

@@ -57,9 +57,9 @@ header a:hover {
     border-right: 1px solid white;
 }
 
-section {
+/* section {
     height: 600px;
-}
+} */
 
 /*SIDEBAR*/
 aside {
@@ -110,6 +110,7 @@ article p {
 footer ul {
     height: 40px;
     background: #e1e1e1;
+    clear: both;
 }
 
 footer li {
