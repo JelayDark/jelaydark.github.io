@@ -5,16 +5,31 @@
    }
 
 body {
-    background-color: #199bb7;
+    background: url(../img/background.png) repeat-x #0c739f;
+
+}
+
+.madeby {    
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+    clear: both;
+    font: 10pt "Tahoma", sans-serif;
 }
 
 .wrapper {
-    width: 90%;
+    width: 1240px;
     margin: 0 auto;
     background-color: #fff;
-    padding-top: 20px;
-    font: 14pt 'Tahoma', sans-serif;
+    padding-top: 8px;
+    font: 13pt 'Tahoma', sans-serif;
     font-weight: normal;
+    height: auto;
+    box-shadow: 0 8px 15px #000;
+    overflow: hidden;
+    
 }
 
 header {
@@ -37,18 +52,30 @@ header {
 
 }
 
-.contacts {
+.rightpart {
     float: right;
+}
+
+.contacts {
     color: #128aa7;
+    float: right;
     margin-right: 40px;
+    display: block;
+}
+
+.flags {
+    display: block;
+    margin-top: 90px;
+    margin-right: 40px;
+    
 }
 
 .flags li {
-    display: inline-block;
+    display: inline;
     text-align: center;
     float: right;
-    width: 80px;
-    margin-top: 120px;
+    width: 75px;
+    font-size: 10pt;
 }
 
 .flags a {
@@ -61,27 +88,33 @@ header {
 
 .picture {
     width: 100%;
+    border: 1px solid #128aa7;
 }
 
 .navbar {
     width: 100%;
     background-color: #333333;
+    padding-left: 50px;
     display: block;
-    box-shadow: 0 0 100px black;
-    border-bottom: 2px solid black;
-    z-index: 2;
+    z-index: 3;
+    border-bottom: 1px solid #000;
 }
 
 .navbar li {
-    width: 13.874%;
+    width: auto;
+    padding-right: 35px;
+    margin: 0 23px;
     display: inline-block;
     line-height: 25px;
-    text-align: center;
+    text-align: left;
     position: relative;
 }
 
-.triangle:last-child {
-    font-size: 2pt;
+.triangle:after {
+    content: '\2002▼';
+    font-size: 6pt;
+    position: absolute;
+    top: 3px;
 }
 
 h1 {
@@ -98,12 +131,11 @@ h1 {
 .submenu {
     display: none;
     position: absolute;
-    width: 180px;
     top: 25px;
-    left: 17px;
+    left: -22px;
     background-color: #333333;
-    z-index: 1;
-    padding-left: 15px;
+    z-index: 2;
+    border-top: 1px solid #000;
 }
 
 .submenu li {
@@ -125,6 +157,7 @@ h1 {
     float: left; /* делаем все обертки плавающими блоками чтобы избежать добавления блока с clear: both; */
     position: relative; /* чтобы иметь возможность сместить фон */
     right: 60%; /* обнажаем красный фон для центральной колонки. 30% - ширина центральной колонки */
+    z-index: 1;
 }
 
 .fon2 {/* фон для центральной колонки (белый) */
@@ -133,6 +166,7 @@ h1 {
     float: left;
     position: relative;
     right: 20%; /* обнажаем серый фон для правой колонки. 40% - ширина правой колонки */
+    z-index: 1;
 }
 
 .fon3 {/* фон для правой колонки (тоже серый) */
@@ -140,6 +174,7 @@ h1 {
     background: #edeef0;
     float: left;
     overflow: hidden; /*почему-то серый фон сайдбара выезжает за пределы колонки. Обрезаем его*/
+
 }
 
 .sidebar {
@@ -149,6 +184,8 @@ h1 {
     position:relative;
     left:80%; /* возвращаем колонки с контентом на свои позиции. 70% - сумма смещений оберток fon1 и fon2 */
     text-align: center;
+    padding: 10px 0;
+    line-height: 25px;
 }
 
 .content {
@@ -158,6 +195,7 @@ h1 {
     position:relative;
     left:80%;
     text-align: center;
+    padding: 10px 0;
 }
 
 .news {
@@ -167,12 +205,13 @@ h1 {
     position:relative;
     left:80%;
     text-align: center;
+    padding: 10px 0;
+    line-height: 25px;
 }
 
 .clearfix:after {
     content: '';
     clear: both;
     display: block;
-    float: none;
 }
 
