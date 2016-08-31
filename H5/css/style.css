@@ -1,6 +1,96 @@
-.wrapper {
-    width: 100%;
-    background: url(../img/bg.png) no-repeat;
+html {
+    background: url(../img/bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: table-cell;
+}
+
+/*.wrapper {
+    height: 100%;
+    background: url(../img/bg.png) 100% 100% no-repeat;
+    background-size: cover;
     margin: 0 auto;
+    
+}*/
+
+ul {
+    width: 100%;
+    height: 36px;
+    background-color: #074e8b;
+    color: #fff;
+}
+
+ul li {
+    display: inline-block;
+    text-align: center;
+    float: right;
+    margin: 0 5px;
+    /*отступы*/
+    letter-spacing:normal;
+    display: -moz-inline-stack!important;
+    display:inline-block;
+    
+}
+
+ul a {
+    display: block;
+    color: #489ad4;
+    width: 100%;
+    line-height: 36px;
+    text-decoration: none;
+    padding: 0 5px;
+
+}
+
+ul a:hover {
+    background-color: #4eabda;
+    color: #fff;
+}
+
+.lastulpoint {
+    background: url(../img/grad4menu.png) repeat-x;
+    padding: 0 15px;
+    margin-right: 20px;
+    
+}
+
+.lastulpoint a {
+    display:inline;
+    color: #fff;
+    text-decoration: underline;
+    padding: none;
+    
+}
+
+.lastulpoint a:hover {
+    background-color: inherit;
+    text-decoration: none;
+}
+
+.withimg {
+    border-left: 1px solid #56a2dc;
+}
+
+.withimg a {
+    color: #fff;
+}
+
+.withimg a:hover {
+    background-color: inherit;
+    text-decoration: underline;
+}
+
+.withimg img{
+    vertical-align: middle;
+    margin: 0 10px;
+    
+}
+
+form {
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
+    width: auto;
+    background-color: rgba(0,0,0,0.5);
     
 }
