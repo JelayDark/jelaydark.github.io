@@ -1,8 +1,29 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneuecyr-roman-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-roman-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-roman-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-roman-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneuecyr-roman-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-roman-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-roman-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-roman-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
-    background: url(../img/bg.png) no-repeat center center fixed;
+    background: url(../img/bg_lit.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     background-size: cover;
-    display: table-cell;
 }
 
 /*.wrapper {
@@ -87,10 +108,119 @@ ul a:hover {
 }
 
 form {
-    vertical-align: middle;
     text-align: center;
-    margin: 0 auto;
-    width: auto;
     background-color: rgba(0,0,0,0.5);
+    min-width: 300px;
+    max-width: 600px;
+    margin-bottom: 300px;
+    color: #fff;
+}
+
+.regform {
+    margin: 200px auto;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    font-size: 24pt;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 10px 0;
+    margin-bottom: 2px;
+    margin-top: 300px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+}
+
+.bigou {
+    width: 275;
+    background: url(../img/string.png)  center center no-repeat;
+    height: 35px;
+    color: #999;
+    text-transform: uppercase;
+    margin: 0 auto 10px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.facebut {
+    width: 275px;
+    background: url(../img/facebutton.png) no-repeat;
+    height: 35px;
+    border: 0;
+    border-radius: 5px;
+    color: transparent;
+    cursor: pointer;
+    margin: 25px auto;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+    width: 255px;
+    line-height: 30px;
+    background-color: #000;
+    margin: 10px auto;
+    padding: 5px 10px;
+    text-align: left;
+    color: #fff;
+    border: 0;
+    border-bottom: 1px solid #494949;
+    /* text-shadow: 0.5px 0.5px 0.5px white; */
     
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus {
+    background-color: #1b5288;
+    box-shadow: 0 0 20px 3px #4d88b1;
+    border-color: #4d88b1;
+    outline: 0;
+    
+}
+
+.forc_b {
+    width: 280px;
+    text-align: left;
+    margin: 10px auto;
+}
+
+.forsm {
+    width: 150px;
+    text-align: center;
+    margin: 10px auto;
+    position: relative;
+}
+
+button[type=submit] {
+    opacity: 0;
+    width: 150px;
+    line-height: 30px;
+
+}
+
+.liebtn {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    background: url(../img/btnreg.png) no-repeat;
+    
+}
+
+footer {
+    color: #ccc;
+    line-height: 16px;
+    padding-bottom: 10px;
 }
