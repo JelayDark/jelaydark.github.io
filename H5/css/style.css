@@ -1,29 +1,10 @@
-@font-face {
-    font-family: 'Helvetica Neue';
-    src: url('../fonts/helveticaneuecyr-roman-webfont.eot');
-    src: url('../fonts/helveticaneuecyr-roman-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/helveticaneuecyr-roman-webfont.woff2') format('woff2'),
-         url('../fonts/helveticaneuecyr-roman-webfont.woff') format('woff'),
-         url('../fonts/helveticaneuecyr-roman-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Helvetica Neue';
-    src: url('../fonts/helveticaneuecyr-roman-webfont.eot');
-    src: url('../fonts/helveticaneuecyr-roman-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/helveticaneuecyr-roman-webfont.woff2') format('woff2'),
-         url('../fonts/helveticaneuecyr-roman-webfont.woff') format('woff'),
-         url('../fonts/helveticaneuecyr-roman-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+@import 'fonts.css';
 
 html {
     background: url(../img/bg_lit.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     background-size: cover;
+    font: 10pt "Helvetica Neue", Tahoma, Arial, sans-serif;
 }
 
 /*.wrapper {
@@ -66,6 +47,7 @@ ul a {
 ul a:hover {
     background-color: #4eabda;
     color: #fff;
+    font-weight: bold;
 }
 
 .lastulpoint {
@@ -107,17 +89,19 @@ ul a:hover {
     
 }
 
+/**FORM**/
+
 form {
     text-align: center;
     background-color: rgba(0,0,0,0.5);
     min-width: 300px;
     max-width: 600px;
-    margin-bottom: 300px;
+    /* margin-bottom: 300px; */
     color: #fff;
 }
 
 .regform {
-    margin: 200px auto;
+    margin: 10% auto;
     min-width: 300px;
     max-width: 600px;
 }
@@ -130,7 +114,7 @@ h1 {
     max-width: 600px;
     padding: 10px 0;
     margin-bottom: 2px;
-    margin-top: 300px;
+  /*margin-top: 300px; */
     background-color: rgba(0,0,0,0.5);
     color: #fff;
 }
@@ -223,4 +207,5 @@ footer {
     color: #ccc;
     line-height: 16px;
     padding-bottom: 10px;
+    font-size: 9pt;
 }
