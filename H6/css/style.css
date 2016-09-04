@@ -1,7 +1,345 @@
+@font-face {
+    font-family: 'Lucida Sans Unicode';
+    src: url('../fonts/lsansuni-webfont.eot');
+    src: url('../fonts/lsansuni-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lsansuni-webfont.woff2') format('woff2'),
+         url('../fonts/lsansuni-webfont.woff') format('woff'),
+         url('../fonts/lsansuni-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     background-color: #fff;
+    font: 400 14px / 28px 'Lucida Sans Unicode';
+}
+
+ul {
+    list-style: none;
+    /*отступы*/
+    font-size:0; /* убираем горизонтальные отступы */
+    line-height:0; /* ...и вертикальные в некоторых браузерах */
+    letter-spacing:-1px; /* переубеждаем webkit'ы */
+}
+
+ul li {
+    font-size:14px;
+    line-height:normal;
+    letter-spacing:normal; 
+}
+
+figure {
+    margin: 0;
+    display: inline-block;
 }
 
 .wrapper {
     width: 908px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+/*HEADER*/
+
+.mainhead {
+    
+}
+
+.handset {
+    background: linear-gradient(to bottom, #0c3357, #1e6584);
+    border-radius: 100%;
+}
+
+.phonepic {
+    padding: 1px 4px;
+    vertical-align: middle;
+}
+
+.mainhead span {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 2px;
+    vertical-align: middle;
+}
+
+.mainhead form {
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(to bottom, #0c3357, #1e6584);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 2px 8px 4px;
+    vertical-align: middle;
+}
+
+.mainhead form img {
+    margin-right: 2px;
+    vertical-align: middle;
+}
+
+.mainhead form input[type=text],
+.mainhead form input[type=password]{
+    padding: 2px;
+    width: 113px;
+    margin: 1px;
+    font-size: 9px;
+}
+
+.mainhead form input[type=submit]{
+    height: 12px;
+    width: 30px;
+    position: absolute;
+    top: 7px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.mainhead a {
+    font-size: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 6px; 
+    line-height: 10px;
+}
+
+.bordereda {
+    border-left: 1px solid #fff;
+}
+
+.graylink {
+    display: inline-block;
+}
+
+.graylink a {
+    color: #bfbfbf;
+    text-decoration: underline;
+}
+
+.graylink a:hover {
+    text-decoration: none;
+}
+
+.top_nav {
+    border-radius: 50px;
+    box-shadow: 0 0 2px gray;
+    padding: 2px 4px;
+}
+
+.top_nav img {
+    margin: 2px;
+    cursor: pointer;  
+}
+
+.banner {
+    width: 100%;
+}
+
+/*NAVIGATION*/ /*Not done*/
+
+nav {
+    width: 100%;
+    background: linear-gradient(to bottom, #4d5663 20%, #2d3236, #010101);
+    border-radius: 5px;
+    padding: 1px;
+}
+
+nav ul {
+    margin-left: 80px;
+}
+
+nav ul li {
+    /*отступы*/
+    font-size:14px;
+    line-height:normal;
+    letter-spacing:normal;  
+    display:inline;
+    line-height: 28px;
+    
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 4px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    background: linear-gradient(to top, #0c3357, #1e6584);
+    border-radius: 50px;
+}
+
+/*MAIN PART*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*SIDEBAR*/
+.left_as {
+    float: left;
+    width: 181px;
+}
+
+main aside figure{
+    border-radius: 50px;
+    border: 1px solid #8b979c;
+    margin-top: 13px;
+    padding: 2px;
+    box-shadow: 2px 2px 5px 0 #000;
+}
+
+main aside figure img {
+    vertical-align: middle;
+    background-color: #114165;
+    border-radius: 100%;
+    padding: 4px;
+}
+
+main aside figure figcaption {
+    display: inline;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding-right 5px: 
+}
+
+main aside ul li {
+    list-style: circle;
+    list-style-position: 223333px;
+    padding-left: 2px;
+    line-height: 20px;
+}
+
+main aside ul li a {
+    color: #465961;
+    text-decoration: none;
+}
+
+main aside ul li a:hover {
+    font-size: 15px;
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+    color: #2f4966;
+    text-underline-position: left;
+}
+
+/*CENTER PART*/
+main main {
+    float: left;
+    width: 525px;
+    background: linear-gradient(to bottom, #e4e7e8, #94a7b0);
+    border-radius: 8px;
+    padding: 16px 23px;
+    margin: 5px;
+}
+
+main main figure {
+    text-align: center;
+    margin: 15px 0;
+}
+
+main main figure figure {
+    background-color: #fff;
+    width: 137px;
+    line-height: 127px;
+    border-radius: 6px;
+    text-align: center;
+    margin: 0 15px 5px 15px;
+}
+
+main main figure img {
+    vertical-align: middle;
+}
+
+.maker {
+    color: #427993;
+    font-size: 16px;
+}
+
+.tiretype {
+    font-size: 14px;
+}
+
+.price {
+    font-size: 18px;
+    font: italic 700 13.16px / 11px Arial;
+    color: #114165;
+}
+
+
+/*RIGHT PART WiTH CHECKBOXES*/
+.right_as {
+    float: right;
+}
+
+main form {
+    margin-left: 20px;
+}
+
+input[type=checkbox] {
+    margin: 10px;
+    cursor: pointer;
+}
+
+main form label {
+    line-height: 20px;
+    cursor: pointer;
+}
+
+/*FOOT PART OF MAIN*/
+
+main footer {
+    clear: both;
+    text-align: center;
+    padding: 25px 0;
+}
+
+main footer figure {
+    margin: 10px;
+}
+
+/*FOOTER*/
+.mainfoot {
+    text-align: center;
+    background-color: #213a4d;
+    clear: both;
+}
+
+.mainfoot ul {
+    padding: 20px 0 25px;
+}
+
+.mainfoot ul li {
+    line-height: 16px;
+    /*отступы*/
+    font-size:14px;
+    line-height:normal;
+    letter-spacing:normal;  
+    display:inline;
+}
+
+.borderedli {
+    border-left: 2px solid #fff;
+}
+
+.mainfoot a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 5px;
+    margin: 0 5px;
+}
+
+.mainfoot a:hover {
+    color: #3e7e98;
+}
+
+.mainfoot span {
+    display: block;
+    color: #704543;
+    font-size: 12px;
+    padding-bottom: 40px;
 }
