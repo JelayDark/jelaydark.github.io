@@ -12,7 +12,7 @@
 
 body {
     background-color: #fff;
-    font: 400 14px / 28px 'Lucida Sans Unicode';
+    font: 400 14px 'Lucida Sans Unicode', Arial, Tahoma, sans-serif;
 }
 
 ul {
@@ -24,71 +24,96 @@ ul {
 }
 
 ul li {
+    /*отступы*/
     font-size:14px;
     line-height:normal;
     letter-spacing:normal; 
 }
 
 figure {
-    margin: 0;
     display: inline-block;
+    margin: 0;
 }
 
 .wrapper {
     width: 908px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 17px;
 }
 
 /*HEADER*/
 
 .mainhead {
-    
+    /* text-align: center; */
+    margin-bottom: 9px;
+    padding: 0 4px 0 7px;
 }
 
 .handset {
+    width: 21px;
+    height: 21px;
     background: linear-gradient(to bottom, #0c3357, #1e6584);
+    vertical-align: middle;
+    text-align: center;
+    margin: 5px 0 2px 0;
     border-radius: 100%;
 }
 
 .phonepic {
-    padding: 1px 4px;
-    vertical-align: middle;
+    vertical-align: text-top;
+    height: 20px;
 }
 
 .mainhead span {
+    color: #5e696d;
     display: inline-block;
-    font-size: 20px;
-    margin: 0 2px;
-    vertical-align: middle;
+    vertical-align: bottom;
+    margin: 0 7px 2px 0;
+    line-height: 18px;
+    font: 400 14pt Arial;
 }
 
 .mainhead form {
+    width: 485px;
+    height: 20px;
     display: inline-block;
     position: relative;
-    background: linear-gradient(to bottom, #0c3357, #1e6584);
-    border-radius: 5px;
-    margin: 5px;
-    padding: 2px 8px 4px;
     vertical-align: middle;
+    background: linear-gradient(to top, #0c3357, #1e6584);
+    margin: 0 6px;
+    padding: 3px 3px 3px 7px;
+    font: 8pt 'Lucida Sans Unicode';
+    border-radius: 4px;
+    box-shadow: 1px 3px 3px 0.00px rgba(150, 150, 150, 0.75);
+
 }
 
 .mainhead form img {
-    margin-right: 2px;
     vertical-align: middle;
+    margin-top: 1px;
+}
+
+.mainhead form input[type=text]{
+
+    margin: -3px 4px 0 0;
+}
+
+.mainhead form input[type=password] {
+    margin-right: 2px;
 }
 
 .mainhead form input[type=text],
 .mainhead form input[type=password]{
-    padding: 2px;
-    width: 113px;
-    margin: 1px;
-    font-size: 9px;
+    width: 107px;
+    height: 9px;
+    padding: 3px 2px 4px 4px;
+    border-radius: 2px;
+    border: 1px solid #82949c;
 }
 
 .mainhead form input[type=submit]{
-    height: 12px;
     width: 30px;
+    height: 12px;
     position: absolute;
     top: 7px;
     opacity: 0;
@@ -96,24 +121,29 @@ figure {
 }
 
 .mainhead a {
-    font-size: 10px;
     color: #ffffff;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 5px 0 1px;
+    line-height: 11px;
+    font-size: 11px;
     text-decoration: none;
-    padding: 0 6px; 
-    line-height: 10px;
 }
 
 .bordereda {
+    padding: 0 3px!important;
     border-left: 1px solid #fff;
 }
 
 .graylink {
     display: inline-block;
+    margin-left: 11px;
 }
 
 .graylink a {
     color: #bfbfbf;
     text-decoration: underline;
+    font-size: 9pt;
 }
 
 .graylink a:hover {
@@ -121,205 +151,373 @@ figure {
 }
 
 .top_nav {
-    border-radius: 50px;
-    box-shadow: 0 0 2px gray;
-    padding: 2px 4px;
+    width: 63px;
+    text-align: center;
+    margin-left: 7px;
+    padding: 0 6px;
+    line-height: 19px;
+    border: solid 1px #bdc4c7;
+    border-radius: 10px/10px 10px 9px 9px;
+    box-shadow: 0 0 1px rgba(106, 100, 100, 0.7);
 }
 
 .top_nav img {
-    margin: 2px;
+    margin: 2px 3px 2px 1px;
     cursor: pointer;  
 }
 
 .banner {
     width: 100%;
+    /* margin-bottom: 1px; */
 }
 
-/*NAVIGATION*/ /*Not done*/
+/*NAVIGATION PANEL*/ /*Not done*/
 
 nav {
     width: 100%;
-    background: linear-gradient(to bottom, #4d5663 20%, #2d3236, #010101);
-    border-radius: 5px;
+	background-image: -webkit-linear-gradient(bottom, #000, #576068);
+	background-image: -moz-linear-gradient(bottom, #000, #576068);
+	background-image: -o-linear-gradient(bottom, #000, #576068);
+	background-image: -ms-linear-gradient(bottom, #000, #576068);
+	background-image: linear-gradient(to top, #000, #576068);
+    margin-bottom: 10px;
     padding: 1px;
+	border: solid 1px #0d1642;
+    border-radius: 5px/3px 3px 2px 2px;
+    font: 400 13pt 'Lucida Sans Unicode';
+    -webkit-box-shadow: 0 3px 5px rgba(0,0,0,.75);
+	-moz-box-shadow: 0 3px 5px rgba(0,0,0,.75);
+	box-shadow: 0 3px 5px rgba(0,0,0,.75);
 }
 
 nav ul {
-    margin-left: 80px;
+    margin-left: 90px;
+    display: inline;
 }
 
 nav ul li {
-    /*отступы*/
+    line-height: 27px;
     font-size:14px;
+    /*отступы*/
     line-height:normal;
     letter-spacing:normal;  
     display:inline;
-    line-height: 28px;
     
 }
 
 nav ul li a {
-    color: #fff;
-    padding: 4px 10px;
+    color: #b1bcc0;
+    padding: 2px 15px;
     text-decoration: none;
     text-transform: uppercase;
 }
 
 nav ul li a:hover{
+    color: #fff;
     background: linear-gradient(to top, #0c3357, #1e6584);
     border-radius: 50px;
 }
 
+nav figure {
+    display: inline-block;
+    margin-left: 48px;
+}
+
+nav figure figcaption,
+nav span {
+    color: #929b9f;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -3px 0 0 1px;
+    font: 400 11px/18px Arial;
+}
+
+nav figure a,
+.numa,
+.suma {
+    color: #0d5a8f;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -1px;
+    font: 400 12px/18px Arial;
+    text-decoration: none;
+}
+
+nav figure a img {
+    vertical-align: middle;
+    margin-top: -3px;
+} 
+
+.numa {
+    margin-right: 7px;
+}
+
+.suma {
+    margin-left: 8px;
+}
+
 /*MAIN PART*/
+
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
 }
 
-/*SIDEBAR*/
-.left_as {
-    float: left;
-    width: 181px;
-}
-
-main aside figure{
-    border-radius: 50px;
+section aside figure{
+    line-height: 24px;
     border: 1px solid #8b979c;
-    margin-top: 13px;
-    padding: 2px;
-    box-shadow: 2px 2px 5px 0 #000;
-}
+} 
 
-main aside figure img {
-    vertical-align: middle;
-    background-color: #114165;
-    border-radius: 100%;
-    padding: 4px;
-}
-
-main aside figure figcaption {
+section aside figure figcaption {
     display: inline;
     vertical-align: middle;
+    font-family: 'Lucida Sans Unicode';
     text-transform: uppercase;
-    font-size: 13px;
-    padding-right 5px: 
 }
 
-main aside ul li {
-    list-style: circle;
-    list-style-position: 223333px;
-    padding-left: 2px;
+.lvl2head {
+    color: #114165;
+    width: 180px;
+    margin-bottom: 13px;
+    font-size: 9pt;
+    border-radius: 50px;
+    box-shadow: 1px 3px 3px 0.00px rgba(150, 150, 150, 0.75);
+}
+
+.lvl2head figure {
+    width: 15px;
+    height: 14px;
+    background: -webkit-linear-gradient(-90deg, #206988 0%, #114165 59%, #0d3458 84%, #0c3256 100%);
+    background: -moz-linear-gradient(-90deg, #206988 0%, #114165 59%, #0d3458 84%, #0c3256 100%);
+    background: -o-linear-gradient(-90deg, #206988 0%, #114165 59%, #0d3458 84%, #0c3256 100%);
+    background: -ms-linear-gradient(-90deg, #206988 0%, #114165 59%, #0d3458 84%, #0c3256 100%);
+    background: linear-gradient(180deg, #206988 0%, #114165 59%, #0d3458 84%, #0c3256 100%);
+    text-align: center;
+    vertical-align: middle;
+    padding: 2px;
+    margin: -1px 0 0 3px;
+    border-radius: 50%;
+}
+
+.lvl2head figure img {
+    width: 12px;
+    height: 14px;
+    vertical-align: top;
+}
+
+.lvl3head {
+    color: #114165;
+    line-height: 26px;
+    border-radius: 40px;
+    font-size: 10pt;
+}
+
+.lvl3head figcaption {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 4px 0 0px 5px;
+    padding: 0;
     line-height: 20px;
 }
 
-main aside ul li a {
+/*SIDEBAR*/
+.left_as {
+    width: 179px;
+    float: left;
+}
+
+.left_as .lvl3head {
+    width: 148px;
+    margin-left: 2px;
+}
+
+.cirklemark {
+    width: 3px;
+    height: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+    margin-bottom: 3px;
+    border: 2px solid #465961;
+    border-radius: 50%;
+}
+
+.big {
+    border: 5px solid #114165;
+    width: 11px;
+    height: 11px;
+    margin: -5px 3px 0px 0;
+}
+
+section aside ul li a:hover .cirklemark {
+    color: #0c3256;
+}
+
+section aside ul {
+    margin-left: -3px;
+    margin-bottom: -4px;
+}
+
+section aside ul li {
+    font: 400 9pt 'Lucida Sans Unicode';
+    line-height: 26px;
+}
+
+section aside ul li a {
     color: #465961;
     text-decoration: none;
 }
 
-main aside ul li a:hover {
-    font-size: 15px;
-    text-decoration: underline;
+section aside ul li a:hover {
+    color: #0c3256;
+    font-size: 10pt;
     font-weight: bold;
     font-style: italic;
-    color: #2f4966;
-    text-underline-position: left;
+    text-decoration: underline;
 }
+
 
 /*CENTER PART*/
-main main {
-    float: left;
-    width: 525px;
+section main {
+    width: 510px;
     background: linear-gradient(to bottom, #e4e7e8, #94a7b0);
-    border-radius: 8px;
-    padding: 16px 23px;
-    margin: 5px;
+    float: left;
+    margin: -3px 0 5px 13px;
+    padding: 8px 8px;
+    border-radius: 3px;
 }
 
-main main figure {
+section main figure {
     text-align: center;
-    margin: 15px 0;
+    margin: 0px 6px 8px 7px;
 }
 
-main main figure figure {
+section main figure figure {
+    width: 136px;
     background-color: #fff;
-    width: 137px;
-    line-height: 127px;
-    border-radius: 6px;
     text-align: center;
-    margin: 0 15px 5px 15px;
+    line-height: 127px;
+    border: solid 1px #a4aeb1;
+    border-radius: 7px;
+/*     margin: -3px 15px 5px 13px; */
 }
 
-main main figure img {
+section main figure img {
     vertical-align: middle;
 }
 
 .maker {
     color: #427993;
-    font-size: 16px;
+    margin-bottom: -8px;
+    font-size: 12pt;
+    font-weight: bold;
 }
 
 .tiretype {
-    font-size: 14px;
+    display: block;
+    margin-bottom: -3px;
+    font-size: 10pt;
 }
 
 .price {
-    font-size: 18px;
-    font: italic 700 13.16px / 11px Arial;
     color: #114165;
+    display: block;
+    font: italic 700 12pt Arial;
+    margin: -5px 0 10px 13px;
+    text-align: center;
 }
 
 
 /*RIGHT PART WiTH CHECKBOXES*/
 .right_as {
-    float: right;
+    width: 181px;
+    float: left;
+    margin: -2px 0 0 9px;
 }
 
-main form {
-    margin-left: 20px;
+.right_as .lvl2head {
+    margin-bottom: 0;
+    font-size: 10pt;
+}
+
+.right_as .lvl2head figcaption {
+    margin-left: 2px;
+}
+
+.right_as .lvl3head{
+    width: 135px;
+    color: #114165;
+    margin-top: 15px;
+}
+
+section form {
+    margin-left: 15px;
 }
 
 input[type=checkbox] {
-    margin: 10px;
+    margin: 7px 7px 6px 9px;
     cursor: pointer;
 }
 
-main form label {
+.right_as .right_sec_head {
+    margin: 8px 0 0 -1px;
+}
+
+section form label {
     line-height: 20px;
     cursor: pointer;
 }
 
-/*FOOT PART OF MAIN*/
-
-main footer {
-    clear: both;
-    text-align: center;
-    padding: 25px 0;
+input[type=submit] {
+    color: #e5e9ea;
+    text-transform: uppercase;
+    margin: 16px 0 0 10px;
+    padding: 5px 11px;
+    /* margin-top: 20px; */
+	background-image: -webkit-linear-gradient(top, #206988, #114165 59%, #0c3256);
+	background-image: -moz-linear-gradient(top, #206988, #114165 59%, #0c3256);
+	background-image: -o-linear-gradient(top, #206988, #114165 59%, #0c3256);
+	background-image: -ms-linear-gradient(top, #206988, #114165 59%, #0c3256);
+	background-image: linear-gradient(to bottom, #206988, #114165 59%, #0c3256);
+    font: 400 9pt Arial;
+    border-radius: 10px/11px;
+	border: solid 1px #a7abae;
+    cursor: pointer;
 }
 
-main footer figure {
-    margin: 10px;
+
+/*FOOT PART OF MAIN*/
+
+section footer {
+    clear: both;
+    padding: 23px 0 15px 0;
+    text-align: center;
+}
+
+section footer figure {
+    vertical-align: top;
+    margin: 16px 0 0 10px;
 }
 
 /*FOOTER*/
 .mainfoot {
-    text-align: center;
-    background-color: #213a4d;
     clear: both;
+    background-color: #213a4d;
+    text-align: center;
 }
 
 .mainfoot ul {
-    padding: 20px 0 25px;
+    padding: 13px 0;
 }
 
 .mainfoot ul li {
-    line-height: 16px;
+    line-height: 11px;
+    font-size: 9pt;
     /*отступы*/
-    font-size:14px;
-    line-height:normal;
-    letter-spacing:normal;  
-    display:inline;
+    /* line-height: normal; */
+    letter-spacing: normal;
+    display: inline-block;
 }
 
 .borderedli {
@@ -327,10 +525,10 @@ main footer figure {
 }
 
 .mainfoot a {
-    text-decoration: none;
     color: #fff;
     padding: 0 5px;
     margin: 0 5px;
+    text-decoration: none;
 }
 
 .mainfoot a:hover {
@@ -338,8 +536,8 @@ main footer figure {
 }
 
 .mainfoot span {
-    display: block;
     color: #704543;
-    font-size: 12px;
-    padding-bottom: 40px;
+    display: block;
+    padding-bottom: 48px;
+    font-size: 7pt;
 }
