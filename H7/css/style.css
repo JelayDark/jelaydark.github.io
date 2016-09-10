@@ -1,0 +1,96 @@
+.wrapper {
+    margin: 0 auto;
+}
+
+.widthexp {
+    width: 320px;
+    margin: 0 auto;
+}
+
+header {
+    background: url(../img/First-BGtop.jpg) top center no-repeat;
+    background-size:cover;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.headline{
+    font: 400 48px 'League Gothic';
+    text-transform: uppercase;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    margin: 20px auto;
+}
+
+.headline_2 {
+    color: #fefefe;
+    font: 400 36px / 24px 'League Gothic';
+    text-transform: capitalize;
+}
+
+.headline_3_pink {
+    color: #edbfff;
+    font: 400 18px / 24px 'League Gothic';
+}
+
+.link {
+    font: 400 24px 'League Gothic';
+    color: #fff;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-shadow: 0 0 8px rgba(255,255,255,.8);
+}
+
+.link_underlined {
+    text-decoration: underline;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #fff;
+}
+
+.link_underlined:hover {
+    text-shadow: none;
+    text-decoration: none;
+}
+
+.colored {
+    background: -webkit-linear-gradient(bottom, #322539, #745083);
+    background: -o-linear-gradient(bottom, #322539, #745083);
+    background: linear-gradient(to top, #322539, #745083);
+    -webkit-background-clip: text;    
+    color: transparent;
+}
+
+.losung { 
+    width: 210px;
+    position: relative;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.losung .l_arr {
+    top: 40%;
+    left: 0;
+}
+
+.losung .r_arr {
+    top: 40%;
+    right: 0;
+}
+
+.circle {
+    width: 17px;
+    height: 17px; 
+    display: inline-block;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+}
+
+.shaded {
+    height: 11px;
+    width: 11px; 
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 3px auto;
+}
