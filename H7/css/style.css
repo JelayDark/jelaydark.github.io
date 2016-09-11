@@ -5,6 +5,7 @@
 .widthexp {
     width: 320px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 header {
@@ -37,6 +38,7 @@ header {
     font: 400 24px 'League Gothic';
     color: #fff;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .link:hover {
@@ -93,4 +95,35 @@ header {
     background-color: #fff;
     border-radius: 50%;
     margin: 3px auto;
+}
+
+.section {
+    padding: 20px 0;
+    color: #000;
+}
+
+.section_purple {
+    background: -webkit-linear-gradient(bottom, #322539, #745083);
+	background: -moz-linear-gradient(bottom, #322539, #745083);
+	background: -o-linear-gradient(bottom, #322539, #745083);
+	background: -ms-linear-gradient(bottom, #322539, #745083);
+    background: linear-gradient(to top, #322539, #745083);
+    color: #fff;
+}
+
+.image_left {
+    display: inline-block;
+    
+}
+
+.footer {
+    background: url(img/bg-float.png) center no-repeat cover;
+    text-align: center;
+    font: 300 12px / 33.724px "Open Sans Light";
+    color: #fff;
+}
+
+.link_little {
+    color: #fff;
+    font: 700 12px / 33.724px OpenSans;
 }
