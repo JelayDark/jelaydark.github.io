@@ -114,6 +114,13 @@ header {
 .image_left {
     display: inline-block;
     
+    
+}
+
+.text_right {
+    display: inline-block;
+    width: 70%;
+    font: 300 16px / 24px "Open Sans Light";
 }
 
 .footer {
