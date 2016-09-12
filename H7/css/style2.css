@@ -2,6 +2,12 @@
     margin: 0 auto;
 }
 
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 .header {
     background: url(../img/First-BGtop.jpg) top center no-repeat;
     background-size: cover;
@@ -30,16 +36,26 @@
     font: 400 18px / 24px "League Gothic";
     text-decoration: none;
     text-transform: uppercase;
+    float: right;
 }
 
 .link:hover {
     text-shadow: 0 0 8px rgba(255,255,255,.8);
 }
 
+.link_black {
+    color: #454545;
+}
+
+.link_black:hover {
+    text-shadow: 0 0 8px rgba(69,69,69,.8);
+}
+
 .link_bordered {
     font-size:24px;
     width: 47px;
     display: inline-block;
+    float: none;
     border-bottom: 2px solid pink; /* NEED TO PLACE THE COLOR*/
 }
 
@@ -48,21 +64,106 @@
     border: none;
 }
 
+
+
 .headline {
     font: 400 24px / 24px "League Gothic";
     color: #fff;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .headline_pink {
     color: #edbfff;
     font-size: 18px;
-    margin: 0;
+
+}
+
+.headline_black {
+    color: #454545;
+
+}
+
+.headline_pink_normal {
+    color: #edbfff;
+    font-size: 24px;
+
 }
 
 .headline_losung {
     color: #fefefe;
     font-size:36px;
     text-transform: capitalize;
-    margin: 0;
+
 }
+
+.losung {
+    text-align: left;
+    width: 210px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+.circle {
+    width: 17px;
+    height: 17px; 
+    display: inline-block;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.shaped {
+    height: 11px;
+    width: 11px; 
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 3px auto;
+}
+
+.section {
+    background-color: #f9f9f9;
+    color: #454545;
+}
+
+.section_purple {
+    background: -webkit-linear-gradient(bottom, #322539, #745083);
+	background: -moz-linear-gradient(bottom, #322539, #745083);
+	background: -o-linear-gradient(bottom, #322539, #745083);
+	background: -ms-linear-gradient(bottom, #322539, #745083);
+    background: linear-gradient(to top, #322539, #745083);
+    color: #fff;
+}
+
+.txtarea {
+    width: 280px;
+    margin: 0 auto;
+}
+
+.txtarea_white {
+    background-color: #fff;
+}
+
+.img_left {
+    display: inline-block;
+    float: left;
+/*    margin: 15px;*/
+}
+
+/*
+.img_circle {
+    border-radius: 50%;
+}
+*/
+
+.txt_right {
+    display: inline-block;
+    float: left;
+    width: 220px;
+}
+
+.inform{
+    font: 300 16px / 24px "Open Sans Light";
+}
+
