@@ -1,5 +1,6 @@
 .wrapper {
     margin: 0 auto;
+    text-align: center;
 }
 
 .clearfix::after {
@@ -8,11 +9,18 @@
     clear: both;
 }
 
+.mob_width_div {
+    width: 320px;
+    margin: 0 auto;
+}
+
 .header {
     background: url(../img/First-BGtop.jpg) top center no-repeat;
     background-size: cover;
     text-align: center;
-    padding: 30px 0;
+/*    padding: 30px 0;*/
+    padding-top: 42px;
+    padding-bottom: 65px;
 }
 
 .logotype {
@@ -20,8 +28,11 @@
     text-transform: uppercase;
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
     color: #fff;
-    margin: 20px auto;
+/*    margin: 20px auto;*/
+    margin-bottom: 38px;
+    margin-left: -3px;
 }
+
 
 .gradiented {
     background: -webkit-linear-gradient(bottom, #322539, #745083);
@@ -45,6 +56,10 @@
 
 .link_black {
     color: #454545;
+    display: block;
+    width: 280px;
+    text-align: right;
+    margin: 0 auto;
 }
 
 .link_black:hover {
@@ -57,6 +72,8 @@
     display: inline-block;
     float: none;
     border-bottom: 2px solid pink; /* NEED TO PLACE THE COLOR*/
+    margin-left: -3px;
+    padding-bottom: 4px;
 }
 
 .link_bordered:hover {
@@ -64,13 +81,19 @@
     border: none;
 }
 
-
+.link_little {
+    float: none;
+    text-transform: none;
+    font-family: "Open Sans Extrabold";
+    font-size: 12px;
+}
 
 .headline {
     font: 400 24px / 24px "League Gothic";
     color: #fff;
     text-transform: uppercase;
     margin: 0;
+    margin-bottom: 3px;
 }
 
 .headline_pink {
@@ -87,6 +110,8 @@
 .headline_pink_normal {
     color: #edbfff;
     font-size: 24px;
+    margin-top: -3px;
+    margin-bottom: 4px;
 
 }
 
@@ -94,15 +119,46 @@
     color: #fefefe;
     font-size:36px;
     text-transform: capitalize;
+    margin-bottom: 5px;
+}
 
+.headline_big {
+    margin: 0 auto;
+    display: block;
+    width: 280px;
+    text-align: left;
+    font-size: 30px;
+    color: #454545;
+    margin-left: 17px;
+    margin-top: 47px;
 }
 
 .losung {
     text-align: left;
     width: 210px;
-    margin: 0 auto;
+    margin: 128px 0 75px 62px;
     position: relative;
     
+}
+
+.arrow {
+    width: 22px;
+    height: 34px;
+    position: absolute;
+    cursor: pointer;
+/*    box-shadow: 0px 0px 5px 0.00px rgba(0, 0, 0, 0.8);*/
+}
+
+.arrow_left {
+    background: url(../img/arrows.png) 0 -38px no-repeat;
+    top: 5px;
+    left: -4em;
+}
+
+.arrow_right {
+    background: url(../img/arrows.png) 0 0 no-repeat;
+    top: 6px;
+    right: -2.8em;
 }
 
 .circle {
@@ -114,6 +170,14 @@
     cursor: pointer;
 }
 
+.circle_white {
+    background-color: #fff;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #000; /*TO PLACE a needed color*/
+}
+
+
 .shaped {
     height: 11px;
     width: 11px; 
@@ -122,9 +186,19 @@
     margin: 3px auto;
 }
 
+.shaped_black {
+    background-color: #000; /*To place a needed color*/
+    margin: 2px;
+    height: 12px;
+    width: 12px;
+}
+
 .section {
+    text-align: center;
     background-color: #f9f9f9;
     color: #454545;
+    padding-top: 70px;
+    padding-bottom: 41px;
 }
 
 .section_purple {
@@ -137,33 +211,106 @@
 }
 
 .txtarea {
-    width: 280px;
+    width: 160px;
     margin: 0 auto;
+    text-align: left;
+    position: relative;
+    margin-bottom: 22px;
+}
+
+.txtarea_3rd_purp {
+    margin-top: 38px;
 }
 
 .txtarea_white {
     background-color: #fff;
+    width: 187px;
+    padding: 25px 33px 15px;
+    margin-left: 44px;
+}
+
+.txtarea_posts {
+    margin-top: 19px;
+    margin-left: 84px;
 }
 
 .img_left {
     display: inline-block;
-    float: left;
+    position: absolute;
+    top: 1px;
+    left: -32%;
 /*    margin: 15px;*/
 }
 
-/*
 .img_circle {
-    border-radius: 50%;
+    top: 18px;
+    left: -10%;
 }
-*/
+
+.img_posts {
+    top: 0px;
+    left: -41%;
+}
 
 .txt_right {
     display: inline-block;
     float: left;
+    width: 212px;
+}
+
+.txt_right_black {
+    width: 184px;
+}
+
+.txt_right_posts {
     width: 220px;
 }
 
 .inform{
     font: 300 16px / 24px "Open Sans Light";
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.inform_black {
+    margin-left: 3px;
+}
+
+.inform_post {
+    margin-top: -12px;
+    margin-left: 0px;
+    margin-bottom: -2px;
+}
+
+.inform_little {
+    font: 300 12px / 33.724px "Open Sans Light";
+    display: block;
+    padding: 40px 0 120px 0;
+}
+
+.headline_inform {
+    color: #454545;
+    font-family: "Open Sans Extrabold";
+}
+
+.logo {
+    height: 65px;
+    width: 70px;
+    cursor: pointer;
+}
+
+.logo1 {
+    background: url(../img/logos/Logo1-2.png) 0 0 no-repeat;
+}
+
+.logo2 {
+    background: url(../img/logos/Logo1-2.png) -76px 0 no-repeat;
+}
+
+.footer {
+    background: url(img/bg-float.png) center center no-repeat;
+    text-align: center;
+    background-size: cover;
+    color: #fff;
 }
 
