@@ -1,0 +1,306 @@
+.con_w {
+    padding: 0 20px;
+    min-width: 320px;
+    max-width: 960px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*HEADER*/
+.header {
+    background: url(../img/First-BGtop.jpg) top center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 45px 0 65px;
+}
+
+.logo {
+    font: 400 48px / 33.724px "League Gothic";
+    text-transform: uppercase;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    margin: 0 auto;
+}
+
+.logo_gradiented {
+    background: -webkit-linear-gradient(bottom, #322539, #745083);
+    background: -o-linear-gradient(bottom, #322539, #745083);
+    background: linear-gradient(to top, #322539, #745083);
+    -webkit-background-clip: text;    
+    color: transparent;
+}
+
+.link {
+    color: #fff;
+    font: 400 18px / 24px LeagueGothic;
+    float: right;
+    text-transform: uppercase;
+}
+
+.link:hover {
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+}
+
+.link_home {
+    display: inline-block;
+    width: 47px;
+    font: 400 24px / 33.724px LeagueGothic;
+    padding: 4px 0;
+    border-bottom: 2px solid #edbfff;
+    margin: 0 auto;
+    float: none; 
+}
+
+.link_home:hover {
+    border-color: transparent;
+}
+
+.losung {
+    text-align: left;
+    margin: 0 auto;
+    width: 202px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.headline {
+    font: 400 24px / 24px LeagueGothic;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 0px #0f1518;
+    margin: 0;
+}
+
+.headline_losung {
+    color: #fefefe;
+    font: 400 36px / 24px LeagueGothic;
+    text-transform: capitalize;
+}
+
+.headline_pink {
+    color: #edbfff;
+    font: 400 18px / 24px LeagueGothic;    
+}
+
+.circles {
+    margin: 0 auto;
+}
+
+.circle {
+    width: 17px;
+    height: 17px; 
+    display: inline-block;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.shaped {
+    height: 11px;
+    width: 11px; 
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 3px auto;
+}
+
+/*SECTION PURPLE*/
+
+.section {
+    color: #fff;
+    background: -webkit-linear-gradient(bottom, #322539, #745083);
+	background: -moz-linear-gradient(bottom, #322539, #745083);
+	background: -o-linear-gradient(bottom, #322539, #745083);
+	background: -ms-linear-gradient(bottom, #322539, #745083);
+    background: linear-gradient(to top, #322539, #745083);
+    padding: 70px 0 41px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #fff;
+}
+
+/*Set MEDIUM PROPERTIES*/
+.col {
+    width: 280px;
+    margin: 0 auto;
+}
+
+
+.img_left {
+    width: 24px;
+    height: 25px;
+    background: url(../img/wrench.png) center center no-repeat;
+    margin: 0 20px;
+    float: left;
+}
+
+.txt_right {
+    width: 197px;
+    text-align: left;
+    float: left;
+}
+
+.info {
+    font: 300 16px / 24px "Open Sans Light";
+    margin: 0;
+}
+
+
+
+/*SECTION LITE GRAY*/
+
+.section_lgray {
+    color: #454545;
+    background: #f9f9f9;
+}
+
+.txt_white {
+    position: relative;
+    background-color: #fff;
+    padding: 27px 31px 33px 34px;
+    min-width: 180px;
+/*   max-width: 430px;*/
+    float: right;
+}
+
+.headline_client {
+    font: 400 24px / 24px LeagueGothic;
+    text-shadow: none;
+}
+
+.img_client {
+    width: 49px;
+    height: 49px;
+    background: url(../img/client.png) center center no-repeat;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: -20px;
+}
+
+.circle_white {
+    background-color: #fff;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #000; /*TO PLACE a needed color*/
+}
+
+.shaped_black {
+    background-color: #000; /*To place a needed color*/
+    margin: 2px;
+    height: 12px;
+    width: 12px;
+}
+
+.headline_upd {
+    font: 400 30px / 24px LeagueGothic;
+    float: left;
+}
+
+.col_upd {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.img_upd {
+    width: 49px;
+    height: 49px;
+    margin: 0 15px 0 0;
+    background: url(../img/Layer-1.png) center center no-repeat;
+    
+}
+
+.info_headline {
+    font-family: "Open Sans Extrabold";
+}
+
+.link_black {
+    color: #454545;
+}
+
+.link_black:hover {
+    text-shadow: 0 0 8px rgba(69,69,69,.8);
+}
+
+/*SECTION WITH LOGOES*/
+
+.wrapper_logo {
+    width: 40%;
+    display: inline-block;
+    text-align: center;
+}
+
+.img_logo {    
+    margin: 0 auto;
+}
+
+.img_logo_1 {
+    background: url(../img/logos/Logo1-2.png) 0 0 no-repeat;
+    height: 64px;
+    width: 70px;
+}
+
+.img_logo_2 {
+    background: url(../img/logos/Logo1-2.png) -76px 0 no-repeat;
+    height: 64px;
+    width: 70px;
+}
+
+.img_logo_3 {
+    width: 65px;
+    height: 65px;
+    background: url(../img/logos/Logo4.png) center center no-repeat;
+    
+}
+
+.img_logo_4 {
+    background: url(../img/logos/Logo3.png) center center no-repeat;
+    width: 50px;
+    height: 65px;
+}
+
+.img_logo_5 {
+    background: url(../img/logos/Logo5.png) center center no-repeat;
+    width: 103px;
+    height: 61px;
+}
+
+.img_logo_6 {
+    background: url(../img/logos/Logo6.png) center center no-repeat;
+    width: 78px;
+    height: 61px;
+}
+
+/*GRAY SECTION*/
+
+.section_gray {
+    display: none;
+}
+
+/*FOOTER*/
+
+.footer {
+    background: url(../img/First-BGfoot.jpg) bottom center no-repeat;
+    background-size: auto;
+    color: #fff;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.info_footer {
+    padding: 40px 0;
+    display: block;
+    font: 300 12px / 33.724px "Open Sans Light";
+    margin: 0 auto;
+}
+
+.link_footer {
+    float: none;
+    text-transform: none;
+    font: 700 12px / 33.724px "Open Sans Extrabold";
+}
