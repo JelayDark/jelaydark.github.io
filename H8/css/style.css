@@ -65,6 +65,45 @@ a {
     border-color: transparent;
 }
 
+.link_home:hover .menu { /*SUBMENU! DO IT FF!!! but u can do it tomorrow C;*/
+    display: block;
+}
+
+.link_home:hover .submenu { /*SUBMENU! DO IT FF!!! but u can do it tomorrow C;*/
+    display: block;
+}
+
+.menu { /*SUBMENU! DO IT FF!!! but u can do it tomorrow C;*/
+/*    display: none;*/
+    text-align: center;
+    margin: 0 auto;
+    width: 246px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #051116;
+    opacity: 0.9;
+    background-color: #36293e;
+    border-radius: 20px;
+    list-style: none;
+}
+
+.menu_item { /*SUBMENU! DO IT FF!!! but u can do it tomorrow C;*/
+    line-height: 39px;
+    text-align: center;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+}
+
+
+.submenu { /*SUBMENU! DO IT FF!!! but u can do it tomorrow C;*/
+    display: none;
+    
+}
+
+.submenu_link:hover .menu_item{ /*SUBMENU! DO IT FF!!! but u can do it tomorrow C;*/
+    opacity: 0.3;
+    border-bottom: 2px solid #edbfff;
+}
+
 .losung {
     text-align: left;
     margin: 0 auto;
