@@ -24,6 +24,10 @@ ul {
 
 
 @media(max-width:320px) {
+    .col_w {
+        width: 280px;
+        padding: 0 20px;
+    }
     
 /*HEADER*/
 .header {
@@ -224,6 +228,11 @@ ul {
     text-align: left;
     float: left;
 }
+    
+    .txt_purple_height {
+        height: 96px;
+        overflow: hidden;
+    }    
 
 .info {
     font: 300 16px / 24px "Open Sans Light";
@@ -387,6 +396,10 @@ ul {
 }/*End of media 320px*/
 
 @media(max-width:2000px) { /*480px*/
+    .con_w {
+        width: 440px;
+        padding: 0 20px;
+    }
 /*HEADER*/    
 .header {
     background: url(../img/First-BGtop.jpg) top center no-repeat;
@@ -502,11 +515,35 @@ ul {
 /*/Submenu*/
      /* TODO:
     Добавить хуетень, которая создаст засерение фона. В остальном - в код добавить картинку, что будет убираться на 320 и увеличить место под блоки . И послать остальное нахер А! ЕЩЕ ВС₴ В ПРОЦЕНТАХ УЖЕ. Это 320 минимальный. здесь же уже пойдет резиновое уменьшение до 320. И разобраться с хренотенью, почему при ширине обертки в 320, а не в 303 появляется пустой правый маргин в -17пикселей. Решить. Верстать. Жить. А то уже третью неделю не выхожу из дома раньше полуночи - пора, dude*/
+
+    
+    
+.section_head_shad {
+    background: rgba(0,0,0,.3);
+    height: 249px;
+    position: relative;
+}
+    
+.img_losung {
+    height: 261px;
+    width: 192px;
+    background: url(../img/Iphone.png) top center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    float: right;
+    margin-top: -6px;
+    
+}
+    
 .losung {
     text-align: left;
-    margin: 0 auto;
-    width: 100%;
+    margin: -24px auto 0;
+    width: 202px;
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    float: left;
+    position: absolute;
+    top: 50%
+        
 }
 
 .headline {
@@ -529,6 +566,7 @@ ul {
 
 .circles {
     margin: 0 auto;
+    width: 111px;
 }
 
 .circle {
@@ -546,5 +584,204 @@ ul {
     background-color: #fff;
     border-radius: 50%;
     margin: 3px auto;
+}  
+/*SECTION PURPLE*/
+
+.section {
+    color: #fff;
+    background: -webkit-linear-gradient(bottom, #322539, #745083);
+	background: -moz-linear-gradient(bottom, #322539, #745083);
+	background: -o-linear-gradient(bottom, #322539, #745083);
+	background: -ms-linear-gradient(bottom, #322539, #745083);
+    background: linear-gradient(to top, #322539, #745083);
+    padding: 70px 0 41px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #fff;
+}
+
+/*Set MEDIUM PROPERTIES*/
+.col {
+    width: 440px;
+    margin: 0 auto;
+}
+
+
+.img_left {
+    width: 24px;
+    height: 25px;
+    background: url(../img/wrench.png) center center no-repeat;
+    margin: 0 20px;
+    float: left;
+}
+
+.txt_right {
+    width: 365px;
+    text-align: left;
+    float: left;
+}
+
+.txt_purple_height {
+    height: 96px;
+    overflow: hidden;
 }    
+
+.info {
+    font: 300 16px / 24px "Open Sans Light";
+    margin: 0;
+}
+
+/*TODO20.09:
+НИКОГДА БОЛЬШЕ ТАК НЕОЖИДАННО НЕ УДАЛЯТЬ ^^ Изменить положение новостей. Изменить тексты, подкорректировать текст отзыва - вместо быров просто пробелы применить в отзыве оверфлоу не ко всему ткстрайту а только к инфику. сделать то же самое пёрплу. изменить отображение логосов. Нарисовать грей хрень. Изменить всю пиксельность на процентность (Но только в ширине). Дорисовать нижнее меню футера. В 320 где надо расставить дисплей нон и бг нон. Перенести 320 медиа вниз. Найти квартиру в красноармейске*/
+
+/*SECTION LITE GRAY*/
+
+.section_lgray {
+    color: #454545;
+    background: #f9f9f9;
+}
+
+.txt_white {
+    position: relative;
+    background-color: #fff;
+    padding: 27px 31px 33px 34px;
+    min-width: 180px;
+/*   max-width: 430px;*/
+    float: right;
+}
+
+.headline_client {
+    font: 400 24px / 24px LeagueGothic;
+    text-shadow: none;
+}
+
+.img_client {
+    width: 49px;
+    height: 49px;
+    background: url(../img/client.png) center center no-repeat;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: -20px;
+}
+
+.circle_white {
+    background-color: #fff;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #000; /*TO PLACE a needed color*/
+}
+
+.shaped_black {
+    background-color: #000; /*To place a needed color*/
+    margin: 2px;
+    height: 12px;
+    width: 12px;
+}
+
+.headline_upd {
+    font: 400 30px / 24px LeagueGothic;
+    float: left;
+}
+
+.col_upd {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.img_upd {
+    width: 49px;
+    height: 49px;
+    margin: 0 15px 0 0;
+    background: url(../img/Layer-1.png) center center no-repeat;
+    
+}
+
+.info_headline {
+    font-family: "Open Sans Extrabold";
+}
+
+.link_black {
+    color: #454545;
+}
+
+.link_black:hover {
+    text-shadow: 0 0 8px rgba(69,69,69,.8);
+}
+
+/*SECTION WITH LOGOES*/
+
+.wrapper_logo {
+    width: 40%;
+    display: inline-block;
+    text-align: center;
+}
+
+.img_logo {    
+    margin: 0 auto;
+}
+
+.img_logo_1 {
+    background: url(../img/logos/Logo1-2.png) 0 0 no-repeat;
+    height: 64px;
+    width: 70px;
+}
+
+.img_logo_2 {
+    background: url(../img/logos/Logo1-2.png) -76px 0 no-repeat;
+    height: 64px;
+    width: 70px;
+}
+
+.img_logo_3 {
+    width: 65px;
+    height: 65px;
+    background: url(../img/logos/Logo4.png) center center no-repeat;
+    
+}
+
+.img_logo_4 {
+    background: url(../img/logos/Logo3.png) center center no-repeat;
+    width: 50px;
+    height: 65px;
+}
+
+.img_logo_5 {
+    background: url(../img/logos/Logo5.png) center center no-repeat;
+    width: 103px;
+    height: 61px;
+}
+
+.img_logo_6 {
+    background: url(../img/logos/Logo6.png) center center no-repeat;
+    width: 78px;
+    height: 61px;
+}
+
+/*GRAY SECTION*/
+
+.section_gray {
+    display: none;
+}
+
+/*FOOTER*/
+
+.footer {
+    background: url(../img/First-BGfoot.jpg) bottom center no-repeat;
+    background-size: auto;
+    color: #fff;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.info_footer {
+    padding: 40px 0;
+    display: block;
+    font: 300 12px / 33.724px "Open Sans Light";
+    margin: 0 auto;
+}
+
+.link_footer {
+    float: none;
+    text-transform: none;
+    font: 700 12px / 33.724px "Open Sans Extrabold";
+}
 }/*End of media 480px*/
