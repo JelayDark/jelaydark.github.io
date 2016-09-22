@@ -2,8 +2,8 @@
 
 .con_w {
     padding: 0;
-    min-width: 303px;
-    max-width: 960px;
+    min-width: 280px;
+    max-width: 920px;
     text-align: center;
     margin: 0 auto;
 }
@@ -22,122 +22,318 @@ ul {
     padding: 0;
 }
 
-@media(max-width:2000px) { /*480px*/
+@media(max-width:2000px) { /*768px*/
+    .con_w {
+        max-width: 728px;
+    }
+/*TODO: РЕШИТЬ, что лучше - мин видс или макс видс и от этого скакать - начать клепать 768пикс. Доделать бу домашки. ПРОЦЕНТЫ!*/
+/*HEADER 768*/
+    .header {
+        background: url(../img/First-BGtop.jpg) top center no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        padding: 45px 0 65px;
+    }
+
+    .logo {
+        font: 400 48px / 33.724px "League Gothic";
+        text-transform: uppercase;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        color: #fff;
+        margin: 0 auto;
+        float: left;
+    }
+
+    .logo_gradiented {
+        background: -webkit-linear-gradient(bottom, #322539, #745083);
+        background: -o-linear-gradient(bottom, #322539, #745083);
+        background: linear-gradient(to top, #322539, #745083);
+        -webkit-background-clip: text;    
+        color: transparent;
+        float: right;
+    }
+
+    .link {
+        color: #fff;
+        font: 400 18px / 24px LeagueGothic;
+        float: right;
+        text-transform: uppercase;
+    }
+
+    .link:hover {
+        text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+    }
+
+    .link_home {
+        display: inline-block;
+        width: 47px;
+        font: 400 24px / 33.724px LeagueGothic;
+        padding: 4px 0;
+        border-bottom: 2px solid #edbfff;
+        margin: 0 auto;
+        float: none; 
+        border-top: 1px solid transparent;
+    }
+
+/*Submenu*/ /*NEED 2 DO AN INNER GLOW FOR iTEMS*/
+    .menu {
+        text-align: center;
+        background: transparent;
+        list-style: none;
+        width: 246px;
+        margin: 0 auto;
+        position: relative;
+    /*    border-radius: 12px*/
+    }
+
+    .menu>li:hover>.link_home {
+        display: block;
+        width: 246px;
+        border-radius: 12px 12px 0 0;
+        border-color: transparent;
+        background: rgba(54,41,62,.5);
+        border-top: 1px solid #000;
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+    }
+
+    .menu>li:hover>.link_home:hover {
+        background: rgba(54,41,62,.9);
+        border-bottom: 2px solid #edbfff;
+    }
+
+    .submenu_link {
+        display: block;
+        line-height: 39px;
+        width: 246px;
+        text-align: center;
+        border-bottom: 2px solid transparent;
+        font: 400 24px / 33.724px LeagueGothic;
+        padding: 4px 0;
+        border-top: 1px solid rgba(237,191,255,.3);
+        border-bottom: 1px solid rgba(54,41,62,.9);
+    }
+
+    .submenu_link:hover {
+        background: rgba(54,41,62,.9);
+        border-color: #edbfff;
+        border-top: 1px solid rgba(237,191,255,.3);
+    }
+
+    .menu_submenu {
+        background: rgba(54,41,62,.5);
+        display: none;
+        position: absolute;
+        top: 44px;
+        left: 0;
+        z-index: 2;
+        border-radius: 0 0 12px 12px;
+        border-bottom: 1px solid #000;
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+    }
+
+    .menu>li:hover>.menu_submenu{
+        display: block;
+    }
+
+    .link_sub_last {
+        border-radius: 0 0 12px 12px;
+    }
+    
+/*/Submenu 480*/
+     /* TODO:
+    Добавить хуетень, которая создаст засерение фона. В остальном - в код добавить картинку, что будет убираться на 320 и увеличить место под блоки . И послать остальное нахер А! ЕЩЕ ВС₴ В ПРОЦЕНТАХ УЖЕ. Это 320 минимальный. здесь же уже пойдет резиновое уменьшение до 320. И разобраться с хренотенью, почему при ширине обертки в 320, а не в 303 появляется пустой правый маргин в -17пикселей. Решить. Верстать. Жить. А то уже третью неделю не выхожу из дома раньше полуночи - пора, dude*/
+        
+        
+        
+    .section_head_shad {
+        background: rgba(0,0,0,.3);
+        height: 249px;
+        position: relative;
+    }
+        
+    .img_losung {
+        height: 261px;
+        width: 192px;
+        background: url(../img/Iphone.png) top center no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        float: right;
+        margin-top: -6px;
+        
+    }
+        
+    .losung {
+        text-align: left;
+        margin: -24px auto 0;
+        width: 202px;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        float: left;
+        position: absolute;
+        top: 50%
+            
+    }
+    
+    .headline {
+        font: 400 24px / 24px LeagueGothic;
+        text-transform: uppercase;
+        text-shadow: 0px 1px 0px #0f1518;
+        margin: 0;
+    }
+    
+    .headline_losung {
+        color: #fefefe;
+        font: 400 36px / 24px LeagueGothic;
+        text-transform: capitalize;
+    }
+    
+    .headline_pink {
+        color: #edbfff;
+        font: 400 18px / 24px LeagueGothic;    
+    }
+    
+    .circles {
+        margin: 0 auto;
+        width: 111px;
+    }
+    
+    .circle {
+        width: 17px;
+        height: 17px; 
+        display: inline-block;
+        background-color: rgba(0,0,0,0.5);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .shaped {
+        height: 11px;
+        width: 11px; 
+        background-color: #fff;
+        border-radius: 50%;
+        margin: 3px auto;
+    }
+    
+} /*End of media 768px*/
+
+
+@media(max-width:480px) { /*480px*/
     .con_w {
         max-width: 440px;
         /* padding: 0 20px; */
     }
-/*HEADER*/    
-.header {
-    background: url(../img/First-BGtop.jpg) top center no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    padding: 45px 0 65px;
-}
+/*HEADER 480*/    
+    .header {
+        background: url(../img/First-BGtop.jpg) top center no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        padding: 45px 0 65px;
+    }
 
-.logo {
-    font: 400 48px / 33.724px "League Gothic";
-    text-transform: uppercase;
-    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    color: #fff;
-    margin: 0 auto;
-}
+    .logo {
+        font: 400 48px / 33.724px "League Gothic";
+        text-transform: uppercase;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        color: #fff;
+        margin: 0 auto;
+    }
 
-.logo_gradiented {
-    background: -webkit-linear-gradient(bottom, #322539, #745083);
-    background: -o-linear-gradient(bottom, #322539, #745083);
-    background: linear-gradient(to top, #322539, #745083);
-    -webkit-background-clip: text;    
-    color: transparent;
-}
+    .logo_gradiented {
+        background: -webkit-linear-gradient(bottom, #322539, #745083);
+        background: -o-linear-gradient(bottom, #322539, #745083);
+        background: linear-gradient(to top, #322539, #745083);
+        -webkit-background-clip: text;    
+        color: transparent;
+    }
 
-.link {
-    color: #fff;
-    font: 400 18px / 24px LeagueGothic;
-    float: right;
-    text-transform: uppercase;
-}
+    .link {
+        color: #fff;
+        font: 400 18px / 24px LeagueGothic;
+        float: right;
+        text-transform: uppercase;
+    }
 
-.link:hover {
-    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
-}
+    .link:hover {
+        text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+    }
 
-.link_home {
-    display: inline-block;
-    width: 47px;
-    font: 400 24px / 33.724px LeagueGothic;
-    padding: 4px 0;
-    border-bottom: 2px solid #edbfff;
-    margin: 0 auto;
-    float: none; 
-    border-top: 1px solid transparent;
-}
-    
-    /*Submenu*/ /*NEED 2 DO AN INNER GLOW FOR iTEMS*/
-.menu {
-    text-align: center;
-    background: transparent;
-    list-style: none;
-    width: 246px;
-    margin: 0 auto;
-    position: relative;
-/*    border-radius: 12px*/
-}
+    .link_home {
+        display: inline-block;
+        width: 47px;
+        font: 400 24px / 33.724px LeagueGothic;
+        padding: 4px 0;
+        border-bottom: 2px solid #edbfff;
+        margin: 0 auto;
+        float: none; 
+        border-top: 1px solid transparent;
+    }
 
-.menu>li:hover>.link_home {
-    display: block;
-    width: 246px;
-    border-radius: 12px 12px 0 0;
-    border-color: transparent;
-    background: rgba(54,41,62,.5);
-    border-top: 1px solid #000;
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
-}
+/*Submenu*/ /*NEED 2 DO AN INNER GLOW FOR iTEMS*/
+    .menu {
+        text-align: center;
+        background: transparent;
+        list-style: none;
+        width: 246px;
+        margin: 0 auto;
+        position: relative;
+    /*    border-radius: 12px*/
+    }
 
-.menu>li:hover>.link_home:hover {
-    background: rgba(54,41,62,.9);
-    border-bottom: 2px solid #edbfff;
-}
+    .menu>li:hover>.link_home {
+        display: block;
+        width: 246px;
+        border-radius: 12px 12px 0 0;
+        border-color: transparent;
+        background: rgba(54,41,62,.5);
+        border-top: 1px solid #000;
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+    }
 
-.submenu_link {
-    display: block;
-    line-height: 39px;
-    width: 246px;
-    text-align: center;
-    border-bottom: 2px solid transparent;
-    font: 400 24px / 33.724px LeagueGothic;
-    padding: 4px 0;
-    border-top: 1px solid rgba(237,191,255,.3);
-    border-bottom: 1px solid rgba(54,41,62,.9);
-}
+    .menu>li:hover>.link_home:hover {
+        background: rgba(54,41,62,.9);
+        border-bottom: 2px solid #edbfff;
+    }
 
-.submenu_link:hover {
-    background: rgba(54,41,62,.9);
-    border-color: #edbfff;
-    border-top: 1px solid rgba(237,191,255,.3);
-}
+    .submenu_link {
+        display: block;
+        line-height: 39px;
+        width: 246px;
+        text-align: center;
+        border-bottom: 2px solid transparent;
+        font: 400 24px / 33.724px LeagueGothic;
+        padding: 4px 0;
+        border-top: 1px solid rgba(237,191,255,.3);
+        border-bottom: 1px solid rgba(54,41,62,.9);
+    }
 
-.menu_submenu {
-    background: rgba(54,41,62,.5);
-    display: none;
-    position: absolute;
-    top: 44px;
-    left: 0;
-    z-index: 2;
-    border-radius: 0 0 12px 12px;
-    border-bottom: 1px solid #000;
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
-}
+    .submenu_link:hover {
+        background: rgba(54,41,62,.9);
+        border-color: #edbfff;
+        border-top: 1px solid rgba(237,191,255,.3);
+    }
 
-.menu>li:hover>.menu_submenu{
-    display: block;
-}
+    .menu_submenu {
+        background: rgba(54,41,62,.5);
+        display: none;
+        position: absolute;
+        top: 44px;
+        left: 0;
+        z-index: 2;
+        border-radius: 0 0 12px 12px;
+        border-bottom: 1px solid #000;
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+    }
 
-.link_sub_last {
-    border-radius: 0 0 12px 12px;
-}
+    .menu>li:hover>.menu_submenu{
+        display: block;
+    }
+
+    .link_sub_last {
+        border-radius: 0 0 12px 12px;
+    }
     
 /*/Submenu 480*/
      /* TODO:
@@ -212,7 +408,7 @@ ul {
         border-radius: 50%;
         margin: 3px auto;
     }  
-    /*SECTION PURPLE 480*/
+/*SECTION PURPLE 480*/
     
     .section {
         color: #fff;
@@ -255,10 +451,10 @@ ul {
         margin: 0;
     }
     
-    /*TODO20.09:
+/*TODO20.09:
     НИКОГДА БОЛЬШЕ ТАК НЕОЖИДАННО НЕ УДАЛЯТЬ ^^ Изменить положение новостей. Изменить тексты, подкорректировать текст отзыва - вместо быров просто пробелы применить в отзыве оверфлоу не ко всему ткстрайту а только к инфику. сделать то же самое пёрплу. изменить отображение логосов. Нарисовать грей хрень. Изменить всю пиксельность на процентность (Но только в ширине). Дорисовать нижнее меню футера. В 320 где надо расставить дисплей нон и бг нон. Перенести 320 медиа вниз. Найти квартиру в красноармейске*/
     
-    /*SECTION LITE GRAY 480*/
+/*SECTION LITE GRAY 480*/
     
     .section_lgray {
         color: #454545;
@@ -348,7 +544,7 @@ ul {
         text-shadow: 0 0 8px rgba(69,69,69,.8);
     }
     
-    /*SECTION WITH LOGOES 480*/
+/*SECTION WITH LOGOES 480*/
     
     .wrapper_logo {
         width: 30%;
@@ -397,7 +593,7 @@ ul {
         height: 61px;
     }
     
-    /*GRAY SECTION*/
+/*GRAY SECTION 480*/
     
     .section_gray {
         color: #787878;
@@ -411,7 +607,7 @@ ul {
         overflow: hidden;
     }
     
-    /*FOOTER 480*/
+/*FOOTER 480*/
     
     .footer {
         background: url(../img/First-BGfoot.jpg) bottom center no-repeat;
@@ -463,11 +659,12 @@ ul {
 
 @media(max-width:320px) {
     .con_w {
-        width: 280px;
+        min-width: 280px;
+        padding: 0;
         /* padding: 0 20px; */
     }
     
-/*HEADER*/
+/*HEADER 320*/
     .header {
         background: url(../img/First-BGtop.jpg) top center no-repeat;
         -webkit-background-size: cover;
@@ -514,7 +711,7 @@ ul {
     }
 
 
-    /*Submenu*/ /*NEED 2 DO AN INNER GLOW FOR iTEMS*/
+/*Submenu 320*/ /*NEED 2 DO AN INNER GLOW FOR iTEMS*/
     .menu {
         text-align: center;
         background: transparent;
@@ -584,7 +781,7 @@ ul {
 
 
 
-    /*/Submenu*/
+/*/Submenu 320*/
 
     .section_head_shad {
         background: transparent;
@@ -595,6 +792,8 @@ ul {
     }
     
     .losung {
+        position: static;
+        float: none;
         text-align: left;
         margin: 0 auto;
         width: 202px;
@@ -640,7 +839,7 @@ ul {
         margin: 3px auto;
     }
 
-    /*SECTION PURPLE*/
+/*SECTION PURPLE 320*/
 
     .section {
         color: #fff;
@@ -687,7 +886,7 @@ ul {
 
 
 
-    /*SECTION LITE GRAY*/
+/*SECTION LITE GRAY 320*/
 
     .section_lgray {
         color: #454545;
@@ -762,7 +961,7 @@ ul {
         overflow: hidden;
         height: 24px;
     }
-    /*TODO 21.09 ЧЕРТОВЫ РАЗМЕРЫ!! ОСОБЕННО У РИСЕНТ НЬЮС! И ПОРА НЕКСТ ДЕЗИГНЫ ВЕРСТАТЬ*/
+/*TODO 21.09 ЧЕРТОВЫ РАЗМЕРЫ!! ОСОБЕННО У РИСЕНТ НЬЮС! И ПОРА НЕКСТ ДЕЗИГНЫ ВЕРСТАТЬ*/
 
     .link_black {
         color: #454545;
@@ -772,7 +971,7 @@ ul {
         text-shadow: 0 0 8px rgba(69,69,69,.8);
     }
 
-    /*SECTION WITH LOGOES*/
+/*SECTION WITH LOGOES 320*/
 
     .wrapper_logo {
         width: 40%;
@@ -821,13 +1020,13 @@ ul {
         height: 61px;
     }
 
-    /*GRAY SECTION*/
+/*GRAY SECTION 320*/
 
     .section_gray {
         display: none;
     }
 
-    /*FOOTER 320*/
+/*FOOTER 320*/
 
     .footer {
         background: url(../img/First-BGfoot.jpg) bottom center no-repeat;
@@ -853,4 +1052,4 @@ ul {
         font: 700 12px / 33.724px "Open Sans Extrabold";
     }
 
-    }/*End of media 320px*/
+}/*End of media 320px*/
