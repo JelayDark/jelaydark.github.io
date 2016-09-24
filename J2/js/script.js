@@ -96,8 +96,8 @@ var test_gen = {
         var_name.appendChild(chbox);
         div_chbox.appendChild(var_name);
         //А теперь помещаем вариант в список вариантов
-        var list_item = document.querySelector('li');
-        console.log ('ffff = ', list_item.lastChild);
+        var list_item = document.querySelector('ol');
+        console.log ('ffff = ', list_item);
         list_item.appendChild(div_chbox);
     },
     
