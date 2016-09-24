@@ -36,12 +36,13 @@ ul {
     }
 
     .logo {
-        font: 400 48px / 33.724px "League Gothic";
+        font: 400 48px / 39px "League Gothic";
         text-transform: uppercase;
         text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
         color: #fff;
         margin: 0 auto;
         float: left;
+        
     }
 
     .logo_gradiented {
@@ -50,7 +51,6 @@ ul {
         background: linear-gradient(to top, #322539, #745083);
         -webkit-background-clip: text;    
         color: transparent;
-        float: right;
     }
 
     .link {
@@ -64,115 +64,50 @@ ul {
         text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
     }
 
-    .link_home {
-        display: inline-block;
-        width: 47px;
-        font: 400 24px / 33.724px LeagueGothic;
-        padding: 4px 0;
-        border-bottom: 2px solid #edbfff;
-        margin: 0 auto;
-        float: none; 
-        border-top: 1px solid transparent;
-    }
-
-/*Submenu*/ /*NEED 2 DO AN INNER GLOW FOR iTEMS*/
     .menu {
-        text-align: center;
-        background: transparent;
-        list-style: none;
-        width: 246px;
-        margin: 0 auto;
-        position: relative;
-    /*    border-radius: 12px*/
-    }
-
-    .menu>li:hover>.link_home {
-        display: block;
-        width: 246px;
-        border-radius: 12px 12px 0 0;
-        border-color: transparent;
-        background: rgba(54,41,62,.5);
-        border-top: 1px solid #000;
-        border-left: 1px solid #000;
-        border-right: 1px solid #000;
-    }
-
-    .menu>li:hover>.link_home:hover {
-        background: rgba(54,41,62,.9);
-        border-bottom: 2px solid #edbfff;
-    }
-
-    .submenu_link {
-        display: block;
-        line-height: 39px;
-        width: 246px;
-        text-align: center;
-        border-bottom: 2px solid transparent;
-        font: 400 24px / 33.724px LeagueGothic;
-        padding: 4px 0;
-        border-top: 1px solid rgba(237,191,255,.3);
-        border-bottom: 1px solid rgba(54,41,62,.9);
-    }
-
-    .submenu_link:hover {
-        background: rgba(54,41,62,.9);
-        border-color: #edbfff;
-        border-top: 1px solid rgba(237,191,255,.3);
-    }
-
-    .menu_submenu {
-        background: rgba(54,41,62,.5);
         display: none;
-        position: absolute;
-        top: 44px;
-        left: 0;
-        z-index: 2;
-        border-radius: 0 0 12px 12px;
-        border-bottom: 1px solid #000;
-        border-left: 1px solid #000;
-        border-right: 1px solid #000;
-    }
-
-    .menu>li:hover>.menu_submenu{
-        display: block;
-    }
-
-    .link_sub_last {
-        border-radius: 0 0 12px 12px;
     }
     
-/*/Submenu 480*/
-     /* TODO:
-    Добавить хуетень, которая создаст засерение фона. В остальном - в код добавить картинку, что будет убираться на 320 и увеличить место под блоки . И послать остальное нахер А! ЕЩЕ ВС₴ В ПРОЦЕНТАХ УЖЕ. Это 320 минимальный. здесь же уже пойдет резиновое уменьшение до 320. И разобраться с хренотенью, почему при ширине обертки в 320, а не в 303 появляется пустой правый маргин в -17пикселей. Решить. Верстать. Жить. А то уже третью неделю не выхожу из дома раньше полуночи - пора, dude*/
-        
+    .menu_nav_top {
+        font-size: 24px;
+    }
         
         
     .section_head_shad {
         background: rgba(0,0,0,.3);
-        height: 249px;
+        height: 400px;
         position: relative;
     }
         
     .img_losung {
-        height: 261px;
-        width: 192px;
-        background: url(../img/Iphone.png) top center no-repeat;
+        height: 380px;
+        width: 267px;
+        background: url(../img/bigIphone.png) top center no-repeat;
         -webkit-background-size: cover;
         background-size: cover;
         float: right;
-        margin-top: -6px;
+        margin-top: -25px;
         
     }
         
     .losung {
         text-align: left;
-        margin: -24px auto 0;
-        width: 202px;
+        margin: -82px auto 0;
+        width: 280px;
         text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
         float: left;
         position: absolute;
         top: 50%
             
+    }
+    
+    .info_losung {
+        height: 92px;
+        overflow: hidden;
+        color: #fff;
+        padding: 0;
+        margin: 0;
+        font: 300 16px / 24px 'Open Sans Light';
     }
     
     .headline {
@@ -184,13 +119,13 @@ ul {
     
     .headline_losung {
         color: #fefefe;
-        font: 400 36px / 24px LeagueGothic;
+        font: 400 48px / 36px LeagueGothic;
         text-transform: capitalize;
     }
     
     .headline_pink {
         color: #edbfff;
-        font: 400 18px / 24px LeagueGothic;    
+        font: 400 24px / 36px LeagueGothic; 
     }
     
     .circles {
@@ -215,6 +150,110 @@ ul {
         margin: 3px auto;
     }
     
+/*SECTION PURPLE 768*/
+    
+    .section {
+        color: #fff;
+        background: -webkit-linear-gradient(bottom, #322539, #745083);
+        background: -o-linear-gradient(bottom, #322539, #745083);
+        background: linear-gradient(to top, #322539, #745083);
+        padding: 70px 0 41px;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #fff;
+/*        text-align: justify;*/
+    }
+    
+/*
+    .section_purple:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 0;
+    }
+*/
+    
+    /*Set MEDIUM PROPERTIES*/
+    .col {
+        width: 202px;
+        margin: 0 auto;
+        display: inline-block;
+/*        margin-left: ;*/
+/*        float: left;*/
+    }
+    
+    
+    .img_left {
+        width: 24px;
+        height: 25px;
+        background: url(../img/wrench.png) center center no-repeat;
+        margin: 0 10px;
+        float: left;
+    }
+    
+    .txt_right {
+        width: 158px;
+        text-align: left;
+        float: left;
+    }
+    
+    .txt_purple_height {
+        height: 168px;
+        overflow: hidden;
+    }    
+    
+    .info {
+        font: 300 16px / 24px "Open Sans Light";
+        margin: 0;
+    }
+    
+/*FOOTER 768 Not done*/
+    
+    .footer {
+        background: url(../img/First-BGfoot.jpg) bottom center no-repeat;
+        background-size: auto;
+        color: #fff;
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+        text-align: center;
+    }
+    
+    .info_footer {
+        padding: 40px 0;
+        display: block;
+        font: 300 12px / 33.724px "Open Sans Light";
+        margin: 0 auto;
+    }
+    
+    .menu_nav {
+        width: 100%;
+        list-style: none;
+        margin: 0 auto;
+        padding: 20px 0;
+        float: left;
+    }
+    
+    .menu_nav_item {
+        float: left;
+        margin-left: 2.5%;
+    }
+    
+    .menu_nav_item_l_ex {
+        margin-left: 0;
+    }
+        
+    .menu_nav_item_r_ex {
+        margin-right: 0;
+    }
+    
+    .link_foot_nav {
+        font-size: 20px;  
+    }
+    
+    .link_footer {
+    float: none;
+    text-transform: none;
+    font: 700 12px / 33.724px "Open Sans Extrabold";
+    }
+    
 } /*End of media 768px*/
 
 
@@ -237,6 +276,7 @@ ul {
         text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
         color: #fff;
         margin: 0 auto;
+        float: none;
     }
 
     .logo_gradiented {
@@ -271,6 +311,7 @@ ul {
 
 /*Submenu*/ /*NEED 2 DO AN INNER GLOW FOR iTEMS*/
     .menu {
+        display: block;
         text-align: center;
         background: transparent;
         list-style: none;
@@ -336,6 +377,10 @@ ul {
     }
     
 /*/Submenu 480*/
+    
+    .menu_nav_top {
+        display: none;
+    }
      /* TODO:
     Добавить хуетень, которая создаст засерение фона. В остальном - в код добавить картинку, что будет убираться на 320 и увеличить место под блоки . И послать остальное нахер А! ЕЩЕ ВС₴ В ПРОЦЕНТАХ УЖЕ. Это 320 минимальный. здесь же уже пойдет резиновое уменьшение до 320. И разобраться с хренотенью, почему при ширине обертки в 320, а не в 303 появляется пустой правый маргин в -17пикселей. Решить. Верстать. Жить. А то уже третью неделю не выхожу из дома раньше полуночи - пора, dude*/
         
@@ -380,6 +425,10 @@ ul {
         color: #fefefe;
         font: 400 36px / 24px LeagueGothic;
         text-transform: capitalize;
+    }
+    
+    .info_losung {
+        display: none;
     }
     
     .headline_pink {
@@ -629,9 +678,17 @@ ul {
         list-style: none;
         margin: 0 auto;
         padding: 20px 0;
+        text-align: justify; /*Растяжение по всей длине*/
     }
     
-    .menu_nav_item {
+    .menu_nav:after { /*Для растяжения по длине*/
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 0;
+    }
+    
+    /* .menu_nav_item {
         display: inline-block;
         margin: 0 2.5%;
     }
@@ -642,12 +699,10 @@ ul {
     
     .menu_nav_item_r_ex {
         margin-right: 0;
-    }
+    } */
     
     .link_foot_nav {
-        font-size: 20px;
-        
-        
+        font-size: 20px;  
     }
     
     .link_footer {
@@ -655,7 +710,8 @@ ul {
     text-transform: none;
     font: 700 12px / 33.724px "Open Sans Extrabold";
     }
-    }/*End of media 480px*/
+    
+}/*End of media 480px*/
 
 @media(max-width:320px) {
     .con_w {
@@ -678,6 +734,7 @@ ul {
         text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
         color: #fff;
         margin: 0 auto;
+        float: none;
     }
 
     .logo_gradiented {
@@ -712,7 +769,9 @@ ul {
 
 
 /*Submenu 320*/ /*NEED 2 DO AN INNER GLOW FOR iTEMS*/
+    
     .menu {
+        display: block;
         text-align: center;
         background: transparent;
         list-style: none;
@@ -782,6 +841,10 @@ ul {
 
 
 /*/Submenu 320*/
+    
+    .menu_nav_top {
+        display: none;
+    }
 
     .section_head_shad {
         background: transparent;
@@ -813,6 +876,10 @@ ul {
         text-transform: capitalize;
     }
 
+    .info_losung {
+        display: none;
+    }
+    
     .headline_pink {
         color: #edbfff;
         font: 400 18px / 24px LeagueGothic;    

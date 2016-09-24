@@ -1,0 +1,9 @@
+.wrapper {
+    padding: 20px 40px;
+    width: 80%;
+    margin: 40px auto;
+    background-color: aliceblue;
+    border: 2px dotted black;
+    text-align: left;
+    color: black;
+}
