@@ -85,7 +85,7 @@ var test_gen = {
     
     method_6: function(txt_ansv, worth) {//Создает вариант ответа
         var div_chbox = document.createElement('div');
-        div_chbox.classList.add('radio')
+        div_chbox.classList.add('checkbox')
         var var_name = document.createElement('label');
         var chbox = document.createElement('input');
         chbox.setAttribute('type', 'checkbox');

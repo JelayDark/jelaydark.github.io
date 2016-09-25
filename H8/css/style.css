@@ -181,7 +181,31 @@ ul {
 /*        float: left;*/
     }
     
+    .few_columns {
+        float: left;
+    }
+/*Растяжение по всей длине */
+    .menu_nav_content {
+        width: 100%;
+        list-style: none;
+        margin: 0 auto;
+        padding: 20px 0;
+        text-align: justify; 
+    }
     
+    .menu_nav_content:after { 
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 0;
+    }
+    
+    .menu_item_content {
+        float: none;
+        margin: 0;
+        display: inline-block;
+    }
+            
     .img_left {
         width: 24px;
         height: 25px;
@@ -206,6 +230,175 @@ ul {
         margin: 0;
     }
     
+/*SECTION LITE GRAY 768*/
+    
+    .section_lgray {
+        color: #454545;
+        background: #f9f9f9;
+    }
+    
+    .col_lgray {
+        width: auto;
+    }
+    
+    .txt_white {
+        position: relative;
+        background-color: #fff;
+        padding: 27px 31px 33px 34px;
+        width: 250px;
+    /*   max-width: 430px;*/
+        float: right;
+    }
+    
+    .headline_client {
+        font: 400 24px / 24px LeagueGothic;
+        text-shadow: none;
+    }
+    
+    .img_client {
+        width: 49px;
+        height: 49px;
+        background: url(../img/client.png) center center no-repeat;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: -20px;
+    }
+    
+    .info_comment {
+        overflow: hidden;
+        width: 251px;
+        height: 144px;
+    }
+    
+    .circle_white {
+        background-color: #fff;
+        width: 16px;
+        height: 16px;
+        border: 1px solid #000; /*TO PLACE a needed color*/
+    }
+    
+    .shaped_black {
+        background-color: #000; /*To place a needed color*/
+        margin: 2px;
+        height: 12px;
+        width: 12px;
+    }
+        
+    .col_width_upd {
+/*        width: 74%;*/
+        width: 322px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+        
+    .headline_upd {
+        font: 400 30px / 24px LeagueGothic;
+        float: left;
+    }
+    
+    .col_upd {
+        width: 322px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    
+    .img_upd {
+        width: 49px;
+        height: 49px;
+        margin: 0 15px 0 0;
+        background: url(../img/Layer-1.png) center center no-repeat;
+    
+    }
+    
+    .info_headline {
+        font-family: "Open Sans Extrabold";
+        width: 258px;
+        overflow: hidden;
+        height: 24px;
+    }
+    
+    .info_upd {
+        width: 258px;
+        overflow: hidden;
+        height: 24px;
+    }
+    
+    .link_black {
+        color: #454545;
+    }
+    
+    .link_black:hover {
+        text-shadow: 0 0 8px rgba(69,69,69,.8);
+    }
+    
+/*SECTION WITH LOGOES 768*/
+    .col_fullwidth {
+        width: 100%;
+    }
+    
+    .wrapper_logo {
+/*        width: 30%;*/
+/*        display: inline-block;*/
+        text-align: center;
+    }
+    
+    .img_logo {    
+        margin: 0 auto;
+    }
+    
+    .img_logo_1 {
+        background: url(../img/logos/Logo1-2.png) 0 0 no-repeat;
+        height: 64px;
+        width: 70px;
+    }
+    
+    .img_logo_2 {
+        background: url(../img/logos/Logo1-2.png) -76px 0 no-repeat;
+        height: 64px;
+        width: 70px;
+    }
+    
+    .img_logo_3 {
+        width: 65px;
+        height: 65px;
+        background: url(../img/logos/Logo4.png) center center no-repeat;
+        
+    }
+    
+    .img_logo_4 {
+        background: url(../img/logos/Logo3.png) center center no-repeat;
+        width: 50px;
+        height: 65px;
+    }
+    
+    .img_logo_5 {
+        background: url(../img/logos/Logo5.png) center center no-repeat;
+        width: 103px;
+        height: 61px;
+    }
+    
+    .img_logo_6 {
+        background: url(../img/logos/Logo6.png) center center no-repeat;
+        width: 78px;
+        height: 61px;
+    }
+    
+/*GRAY SECTION 768*/
+    
+    .section_gray {
+        color: #787878;
+        background: #ececec;
+        /* display: none; */
+    }
+        
+    .txt_gray_sec {
+        width: 207px;
+        height: 192px;
+        overflow: hidden;
+        float: left;
+    }
+    
 /*FOOTER 768 Not done*/
     
     .footer {
@@ -217,10 +410,10 @@ ul {
     }
     
     .info_footer {
-        padding: 40px 0;
+        padding-bottom: 30px;
         display: block;
         font: 300 12px / 33.724px "Open Sans Light";
-        margin: 0 auto;
+        float: right;
     }
     
     .menu_nav {
@@ -253,6 +446,18 @@ ul {
     text-transform: none;
     font: 700 12px / 33.724px "Open Sans Extrabold";
     }
+    /*TODO 25.09:
+        1. Do the biggest des
+        2. in little med queries add styleattributes to do good look for page
+        3. Изменит мах видс на мин видс
+        4. PP
+        5. Купить зарядку для телефна
+        6. Договориться с мастером
+        7. Квартира Красноармейск определиться
+        8. Джинсы купить
+        9. Бельчоне позвонить узнать цвет и выбрать дерево
+        10. куча всего. Вспоминай
+    */
     
 } /*End of media 768px*/
 
@@ -679,6 +884,7 @@ ul {
         margin: 0 auto;
         padding: 20px 0;
         text-align: justify; /*Растяжение по всей длине*/
+        float: none;
     }
     
     .menu_nav:after { /*Для растяжения по длине*/
@@ -688,18 +894,19 @@ ul {
         height: 0;
     }
     
-    /* .menu_nav_item {
+    .menu_nav_item {
+        float: none;
+        margin: 0;
         display: inline-block;
-        margin: 0 2.5%;
     }
     
     .menu_nav_item_l_ex {
-        margin-left: 0;
+        margin: 0;
     }
-    
+        
     .menu_nav_item_r_ex {
-        margin-right: 0;
-    } */
+        margin: 0;
+    }
     
     .link_foot_nav {
         font-size: 20px;  
