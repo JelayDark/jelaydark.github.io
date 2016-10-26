@@ -34,10 +34,12 @@ ul li {
     
 }
 
-ul a {
+ul li a {
     display: block;
     color: #489ad4;
     width: 100%;
+    max-width: 90px;
+    min-width: 70px;
     line-height: 36px;
     text-decoration: none;
     padding: 0 5px;
@@ -68,14 +70,18 @@ ul a:hover {
 .lastulpoint a:hover {
     background-color: inherit;
     text-decoration: none;
+    font-weight: normal;
 }
 
 .withimg {
     border-left: 1px solid #56a2dc;
+    width: 170px;
 }
 
 .withimg a {
     color: #fff;
+    width: 100%;
+    max-width: none;
 }
 
 .withimg a:hover {
@@ -153,6 +159,7 @@ input[type=email] {
     color: #fff;
     border: 0;
     border-bottom: 1px solid #494949;
+    display: block;
     /* text-shadow: 0.5px 0.5px 0.5px white; */
     
 }
