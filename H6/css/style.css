@@ -171,7 +171,7 @@ figure {
     /* margin-bottom: 1px; */
 }
 
-/*NAVIGATION PANEL*/ /*Not done*/
+/*NAVIGATION PANEL*/ 
 
 nav {
     width: 100%;
@@ -258,10 +258,74 @@ nav figure a img {
 
 /*MAIN PART*/
 
+/*SEARCHFORMS*/
+
+.forms {
+    margin-top: -19px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-bottom: -9px;
+}
+
+.fsearches {
+    width: 100%;
+    list-style: none;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: justify; /*Растяжение по всей длине*/
+    float: none;
+}
+
+.fsearches li {
+    display: inline-block;    
+}
+
+.fsearches:after { /*Для растяжения по длине*/
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 0;
+}
+
+.fsearch_left {
+    width: 415px;
+    height: 134px;
+    background-color: white;
+    border: 1px solid #9c9c9d;
+    border-radius: 17px;
+    box-shadow: 2.6px 4.3px 5px rgba(104, 104, 104, 0.75);
+    display: inline-block;
+    margin-left: 0;
+}
+
+.fsearch_center {
+    width: 193px;
+    height: 137px;
+    background-color: white;
+    border: 1px solid #9c9c9d;
+    border-radius: 17px;
+    box-shadow: 2.6px 4.3px 5px rgba(150, 150, 150, 0.75);
+    display: inline-block;
+    margin-left: 0;
+}
+
+.fsearch_right {
+    width: 268px;
+    height: 136px;
+    background-color: white;
+    border: 1px solid #9c9c9d;
+    border-radius: 14px;
+    box-shadow: 2.6px 4.3px 5px rgba(150, 150, 150, 0.75);  
+    display: inline-block;
+    margin-left: 0;
+}
+
+/*MaIN PART */
+
 .clearfix:after {
     content: "";
     display: table;
-    clear: both;
+    clear: both;s
 }
 
 section aside figure{
