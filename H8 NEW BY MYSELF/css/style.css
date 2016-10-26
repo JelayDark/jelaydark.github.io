@@ -1,0 +1,724 @@
+.con_w {
+    padding: 0 20px;
+    min-width: 280px;
+    max-width: 920px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    /* display: inline-block; */
+}
+
+/*320px & less width*/
+
+/*HEADER 320*/
+.header {
+    background: url(../img/First-BGtop.jpg) top center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 45px 0 65px;
+}
+
+.logo {
+    font: 400 48px / 33.724px "League Gothic";
+    text-transform: uppercase;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    margin: 0 auto;
+    float: none;
+}
+
+.logo_gradiented {
+    background: -webkit-linear-gradient(bottom, #322539, #745083);
+    background: -o-linear-gradient(bottom, #322539, #745083);
+    background: linear-gradient(to top, #322539, #745083);
+    -webkit-background-clip: text;  
+    color: transparent;
+}
+
+.link {
+    color: #fff;
+    font: 400 18px / 24px LeagueGothic;
+    float: right;
+    text-transform: uppercase;
+}
+
+.link:hover {
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+}
+
+.link_home {
+    display: inline-block;
+    width: 47px;
+    font: 400 24px / 33.724px LeagueGothic;
+    padding: 4px 0;
+    border-bottom: 2px solid #edbfff;
+    margin: 0 auto;
+    float: none; 
+    border-top: 1px solid transparent;
+}
+
+
+/*Submenu 320*/ /*NEED 2 DO AN INNER GLOW FOR iTEMS*/
+    
+.menu {
+    display: block;
+    text-align: center;
+    background: transparent;
+    list-style: none;
+    width: 246px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.menu>li:hover>.link_home {
+    display: block;
+    width: 246px;
+    border-radius: 12px 12px 0 0;
+    border-color: transparent;
+    background: rgba(54,41,62,.5);
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+.menu>li:hover>.link_home:hover {
+    background: rgba(54,41,62,.9);
+    border-bottom: 2px solid #edbfff;
+}
+
+.submenu_link {
+    display: block;
+    line-height: 39px;
+    width: 246px;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    font: 400 24px / 33.724px LeagueGothic;
+    padding: 4px 0;
+    border-top: 1px solid rgba(237,191,255,.3);
+    border-bottom: 1px solid rgba(54,41,62,.9);
+}
+
+.submenu_link:hover {
+    background: rgba(54,41,62,.9);
+    border-color: #edbfff;
+    border-top: 1px solid rgba(237,191,255,.3);
+}
+
+.menu_submenu {
+    background: rgba(54,41,62,.5);
+    display: none;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    z-index: 2;
+    border-radius: 0 0 12px 12px;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+.menu>li:hover>.menu_submenu{
+    display: block;
+}
+
+.link_sub_last {
+    border-radius: 0 0 12px 12px;
+}
+
+/*/Submenu 320*/
+    
+.menu_nav_top {
+    display: none;
+}
+
+.section_head_shad {
+    background: transparent;
+}
+        
+.img_losung {
+    display: none;
+}
+    
+.losung {
+    position: static;
+    float: none;
+    text-align: left;
+    margin: 0 auto;
+    width: 202px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.headline {
+    font: 400 24px / 24px LeagueGothic;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 0px #0f1518;
+    margin: 0;
+}
+
+.headline_losung {
+    color: #fefefe;
+    font: 400 36px / 24px LeagueGothic;
+    text-transform: capitalize;
+}
+
+.info_losung {
+    display: none;
+}
+    
+.headline_pink {
+    color: #edbfff;
+    font: 400 18px / 24px LeagueGothic;    
+}
+
+.circles {
+    margin: 20px auto;
+    width: 111px;
+}
+
+.circle {
+    width: 17px;
+    height: 17px; 
+    display: inline-block;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.shaped {
+    height: 11px;
+    width: 11px; 
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 3px auto;
+}
+
+/*SECTION PURPLE 320*/
+
+.section {
+    color: #fff;
+    background: -webkit-linear-gradient(bottom, #322539, #745083);
+    background: -moz-linear-gradient(bottom, #322539, #745083);
+    background: -o-linear-gradient(bottom, #322539, #745083);
+    background: -ms-linear-gradient(bottom, #322539, #745083);
+    background: linear-gradient(to top, #322539, #745083);
+    padding: 70px 0 41px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #fff;
+}
+
+.col {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.img_left {
+    width: 24px;
+    height: 25px;
+    background: url(../img/wrench.png) center center no-repeat;
+    margin-right: 20px;
+    float: left;
+}
+
+.txt_right {
+    width: 74%;
+    text-align: left;
+    float: left;
+}
+
+.txt_purple_height {
+    height: 96px;
+    overflow: hidden;
+}    
+
+.info {
+    font: 300 16px / 24px "Open Sans Light";
+    margin: 0;
+}
+
+
+
+/*SECTION LITE GRAY 320*/
+
+.section_lgray {
+    color: #454545;
+    background: #f9f9f9;
+}
+
+.txt_white {
+    position: relative;
+    background-color: #fff;
+    padding: 27px 31px 33px 34px;
+    /* width: 84%; */
+    /* min-width: 180px; */
+/*   max-width: 430px;*/
+    /* float: right; */
+}
+
+.headline_client {
+    font: 400 24px / 24px LeagueGothic;
+    text-shadow: none;
+}
+
+.info_comment {
+    overflow: hidden;
+    width: 100%;
+    height: 168px;
+}
+    
+.img_client {
+    width: 49px;
+    height: 49px;
+    background: url(../img/client.png) center center no-repeat;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    left: -20px;
+}
+
+.circle_white {
+    background-color: #fff;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #000; /*TO PLACE a needed color*/
+}
+
+.shaped_black {
+    background-color: #000; /*To place a needed color*/
+    margin: 2px;
+    height: 12px;
+    width: 12px;
+}
+
+.headline_upd {
+    font: 400 30px / 24px LeagueGothic;
+    float: left;
+}
+
+.col_upd {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.img_upd {
+    width: 49px;
+    height: 49px;
+    margin: 0 15px 0 0;
+    background: url(../img/Layer-1.png) center center no-repeat;
+}
+
+ .info_headline {
+    font-family: "Open Sans Extrabold";
+    width: 60%;
+    overflow: hidden;
+    height: 24px;
+}
+    
+.info_upd {
+    width: 77.1%;
+    overflow: hidden;
+    height: 24px;
+}
+
+.link_black {
+    color: #454545;
+}
+
+.link_black:hover {
+    text-shadow: 0 0 8px rgba(69,69,69,.8);
+}
+
+/*SECTION WITH LOGOES 320*/
+
+/* .wrapper_logo {
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+} */
+
+.menu_item_content_footer {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+}
+
+.img_logo {    
+    margin: 0 auto;
+}
+
+.img_logo_1 {
+    background: url(../img/logos/Logo1-2.png) 0 0 no-repeat;
+    height: 64px;
+    width: 70px;
+}
+
+.img_logo_2 {
+    background: url(../img/logos/Logo1-2.png) -76px 0 no-repeat;
+    height: 64px;
+    width: 70px;
+}
+
+.img_logo_3 {
+    width: 65px;
+    height: 65px;
+    background: url(../img/logos/Logo4.png) center center no-repeat;
+}
+
+.img_logo_4 {
+    background: url(../img/logos/Logo3.png) center center no-repeat;
+    width: 50px;
+    height: 65px;
+}
+
+.img_logo_5 {
+    background: url(../img/logos/Logo5.png) center center no-repeat;
+    width: 103px;
+    height: 61px;
+}
+
+.img_logo_6 {
+    background: url(../img/logos/Logo6.png) center center no-repeat;
+    width: 78px;
+    height: 61px;
+}
+
+/*GRAY SECTION 320*/
+
+ .section_gray {
+     display: none;
+ }
+
+/*FOOTER 320*/
+
+.footer {
+    background: url(../img/First-BGfoot.jpg) bottom center no-repeat;
+    background-size: auto;
+    color: #fff;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.menu_nav {
+    display: none;    
+}
+    
+.info_footer {
+    padding: 40px 0;
+    display: block;
+    font: 300 12px / 33.724px "Open Sans Light";
+    margin: 0 auto;
+}
+
+.link_footer {
+    float: none;
+    text-transform: none;
+    font: 700 12px / 33.724px "Open Sans Extrabold";
+}
+
+
+/*TODO:
+    1.Раппер убрать у логосов - их заменил доп класс навки у футерной херни
+    2. Ну, собстно, переименовать навку
+    3. Теперь от мин видсов начиная с 480 двигат к цели!!!
+    4. Разобраться с комментом
+*/
+
+@media (min-width: 480px) {
+    .section_head_shad {
+        background: rgba(0,0,0,.3);
+        height: 249px;
+        position: relative;
+    }
+    
+    .img_losung {
+        display: block;
+        height: 261px;
+        width: 192px;
+        background: url(../img/Iphone.png) top center no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        float: right;
+        margin-top: -6px;
+        
+    }
+        
+    .losung {
+        text-align: left;
+        margin: -24px auto 0;
+        width: 202px;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        float: left;
+        position: absolute;
+        top: 50%
+            
+    }
+    
+/*SECTION PURPLE 480*/
+     .txt_right {
+        width: 89%;
+        text-align: left;
+        float: left;
+    }
+    
+/*SECTION LITE GRAY 480*/
+    .txt_white {
+        max-width: 400px;
+        margin: 0 auto;
+        float: none;
+    }
+    
+    .col_width_upd {
+        min-width: 340px;
+        width: 66%;
+        margin: 0 auto;
+        float: none;
+    }
+    
+    .info_headline {
+        min-width: 258px;
+        width: 81%;
+    }
+    
+    .info_upd {
+        min-width: 258px;
+        width: 80%;
+        
+    }
+    
+/*SECTION WITH LOGOES 480*/
+    
+    .menu_item_content_footer {
+        width: 30%;
+    }
+    
+/*GRAY SECTION 480*/
+    
+    .section_gray {
+        display: block;
+        color: #787878;
+        background: #ececec;
+        /* display: none; */
+    }
+        
+    .txt_gray_sec {
+        width: 100%;
+        height: 116px;
+        overflow: hidden;
+    }
+} /*End of 480px dis*/
+
+
+@media (min-width: 768px) {
+    .menu {
+        display: none;
+    }
+    
+    .menu_nav_top {
+        font-size: 24px;
+    }
+        
+        
+    .section_head_shad {
+        background: rgba(0,0,0,.3);
+        height: 400px;
+        position: relative;
+    }
+        
+    .img_losung {
+        height: 380px;
+        width: 267px;
+        background: url(../img/bigIphone.png) top center no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        float: right;
+        margin-top: -25px;
+        
+    }
+        
+    .losung {
+        margin: -82px auto 0;
+        width: 280px;
+        float: left;
+        position: absolute;
+        top: 50%       
+    }
+    
+    .info_losung {
+        height: 92px;
+        overflow: hidden;
+        color: #fff;
+        padding: 0;
+        margin: 0;
+        font: 300 16px / 24px 'Open Sans Light';
+        display: block;
+    }
+    
+/*SECTION PURPLE 768px*/    
+    
+    .col {
+        width: 202px;
+        margin: 0 auto;
+        display: inline-block;
+    }
+    
+    .few_columns {
+        float: left;
+    }
+/*Растяжение по всей длине */
+    .menu_nav_content {
+        width: 100%;
+        list-style: none;
+        margin: 0 auto;
+        padding: 20px 0;
+        text-align: justify; 
+    }
+    
+    .menu_nav_content:after { 
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 0;
+    }
+    
+    .menu_item_content {
+        float: none;
+        margin: 0;
+        display: inline-block;
+    }
+    
+    .img_left {
+        margin: 0 10px;
+    }
+    
+    .txt_right {
+        width: 158px;
+    }
+    
+     .txt_purple_height {
+        height: 168px;
+    }
+    
+/*SECTION LITE GRAY 768*/
+    
+    .col_lgray {
+        width: auto;
+    }
+    
+    .txt_white {
+        width: 250px;
+    /*   max-width: 430px;*/
+        float: right;
+    }
+    
+    .headline_client {
+
+    }
+    
+    .info_comment {
+        overflow: hidden;
+        width: 251px;
+        height: 144px;
+    }
+    
+    .col_width_upd {
+/*        width: 74%;*/
+        width: 322px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    .col_upd {
+        width: 322px;
+    }
+    
+    .info_headline {
+        width: 258px;
+    }
+    
+    .info_upd {
+        width: 258px;
+    }
+/*SECTION WITH LOGOES 768*/
+     .col_fullwidth {
+        width: 100%;
+    }
+    
+    .menu_item_content_footer {
+        width: auto;
+    }
+    
+/*GRAY SECTION 768*/
+    
+    .txt_gray_sec {
+        width: 207px;
+        height: 192px;
+        float: left;
+    }
+    
+/*FOOTER 768 Not done */
+       .footer {
+        text-align: center;
+    }
+    .info_footer {
+        padding-bottom: 30px;
+        float: right;
+    }
+    
+    .menu_nav {
+        display: block;
+        width: 100%;
+        list-style: none;
+        margin: 0 auto;
+        padding: 20px 0;
+        float: left;
+    }
+    
+    .menu_nav_item {
+        float: left;
+        margin-left: 2.5%;
+    }
+    
+    .menu_nav_item_l_ex {
+        margin-left: 0;
+    }
+        
+    .menu_nav_item_r_ex {
+        margin-right: 0;
+    }
+    
+    .link_foot_nav {
+        font-size: 20px;  
+    }
+    
+
+    
+}
+
+
+/*TODO:
+    1. Конечно же, PP!!
+    2. В 480 в комменте нужно сделать 2 заголовка в линию
+    3. Ду некст
+*/
+/*
+TODO 27.10.16:
+1.768px - Отредачить размеры
+2.Доделать предыдущие
+3.Сделать некст
+*/

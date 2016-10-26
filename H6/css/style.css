@@ -325,7 +325,7 @@ nav figure a img {
 .clearfix:after {
     content: "";
     display: table;
-    clear: both;s
+    clear: both;
 }
 
 section aside figure{
