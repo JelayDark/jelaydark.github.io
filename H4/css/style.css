@@ -2,11 +2,10 @@
     font-family: Tahoma;
     src: local('Tahoma'),
          url(../fonts/tahoma.ttf);
-   }
+}
 
 body {
     background: url(../img/background.png) repeat-x #0c739f;
-
 }
 
 .madeby {    
@@ -28,8 +27,7 @@ body {
     font-weight: normal;
     height: auto;
     box-shadow: 0 8px 15px #000;
-    overflow: hidden;
-    
+    overflow: hidden;  
 }
 
 header {
@@ -42,14 +40,12 @@ header {
     margin-left: 40px;
     position: relative;
     float: left;
-    
 }
 
 .logo span {
     position: absolute;
     top: 100px;
     left: 50px;
-
 }
 
 .rightpart {
@@ -67,7 +63,6 @@ header {
     display: block;
     margin-top: 90px;
     margin-right: 40px;
-    
 }
 
 .flags li {
@@ -92,22 +87,24 @@ header {
 }
 
 .navbar {
-    width: 100%;
     background-color: #333333;
     padding-left: 50px;
-    display: block;
     z-index: 3;
     border-bottom: 1px solid #000;
 }
 
 .navbar li {
-    width: auto;
-    padding-right: 35px;
     margin: 0 23px;
     display: inline-block;
-    line-height: 25px;
-    text-align: left;
     position: relative;
+}
+
+.navbar li a {
+    width: auto;
+    display: inline-block;
+    line-height: 25px;
+    padding-right: 35px;
+    text-align: left;
 }
 
 .triangle:after {
@@ -120,7 +117,6 @@ header {
 h1 {
     font: bold 18pt 'Tahoma', sans-serif;
     text-align: center;
-    
 }
 
 .navbar a {
@@ -148,7 +144,6 @@ h1 {
     display: block;
 }
 
-
 /**COLUMNS**/
 
 .fon1 {  /* фон для левой колонки (серый) */
@@ -174,7 +169,6 @@ h1 {
     background: #edeef0;
     float: left;
     overflow: hidden; /*почему-то серый фон сайдбара выезжает за пределы колонки. Обрезаем его*/
-
 }
 
 .sidebar {
@@ -214,4 +208,3 @@ h1 {
     clear: both;
     display: block;
 }
-
