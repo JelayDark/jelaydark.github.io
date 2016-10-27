@@ -449,9 +449,9 @@ ul {
     }
     
     .link_footer {
-    float: none;
-    text-transform: none;
-    font: 700 12px / 33.724px "Open Sans Extrabold";
+        float: none;
+        text-transform: none;
+        font: 700 12px / 33.724px "Open Sans Extrabold";
     }  
     
     

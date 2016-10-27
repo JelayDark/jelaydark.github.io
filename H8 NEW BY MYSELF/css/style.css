@@ -144,7 +144,7 @@ li {
 
 /*/Submenu 320*/
     
-.menu_nav_top {
+.menu_nav {
     display: none;
 }
 
@@ -189,7 +189,7 @@ li {
 
 .circles {
     margin: 20px auto;
-    width: 111px;
+    width: 86px;
 }
 
 .circle {
@@ -290,7 +290,7 @@ li {
     margin: 0;
     position: absolute;
     top: 20px;
-    left: -20px;
+    left: -33px;
 }
 
 .circle_white {
@@ -405,6 +405,10 @@ li {
      display: none;
  }
 
+.section_gray_biggest{
+    display: none;
+}
+
 /*FOOTER 320*/
 
 .footer {
@@ -459,10 +463,10 @@ li {
     }
         
     .losung {
-        text-align: left;
+        /* text-align: left; */
         margin: -24px auto 0;
-        width: 202px;
-        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        /* width: 202px; */
+        /* text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); */
         float: left;
         position: absolute;
         top: 50%
@@ -515,6 +519,10 @@ li {
         background: #ececec;
         /* display: none; */
     }
+    
+    .section_gray_biggest {
+        display: none;
+    }
         
     .txt_gray_sec {
         width: 100%;
@@ -529,34 +537,34 @@ li {
         display: none;
     }
     
-    .menu_nav_top {
+    .menu_nav {
         font-size: 24px;
     }
         
         
     .section_head_shad {
-        background: rgba(0,0,0,.3);
+/*         background: rgba(0,0,0,.3); */
         height: 400px;
-        position: relative;
+/*         position: relative; */
     }
         
     .img_losung {
         height: 380px;
         width: 267px;
         background: url(../img/bigIphone.png) top center no-repeat;
-        -webkit-background-size: cover;
+/*         -webkit-background-size: cover;
         background-size: cover;
-        float: right;
+        float: right; */
         margin-top: -25px;
         
     }
         
     .losung {
         margin: -82px auto 0;
-        width: 280px;
-        float: left;
-        position: absolute;
-        top: 50%       
+        width: 40%;
+        /* float: left; */
+       /*  position: absolute;
+        top: 50%    */    
     }
     
     .info_losung {
@@ -572,8 +580,8 @@ li {
 /*SECTION PURPLE 768px*/    
     
     .col {
-        width: 202px;
-        margin: 0 auto;
+        /* width: 202px; */
+/*         margin: 0 auto; */
         display: inline-block;
     }
     
@@ -597,17 +605,19 @@ li {
     }
     
     .menu_item_content {
+        width: 30%;
         float: none;
         margin: 0;
         display: inline-block;
     }
+    
     
     .img_left {
         margin: 0 10px;
     }
     
     .txt_right {
-        width: 158px;
+        width: 78%;
     }
     
      .txt_purple_height {
@@ -615,14 +625,18 @@ li {
     }
     
 /*SECTION LITE GRAY 768*/
+
+    .menu_item_content_lgray {
+        width: 48%;
+    }
     
     .col_lgray {
         width: auto;
     }
     
     .txt_white {
-        width: 250px;
-    /*   max-width: 430px;*/
+        width: 80%;
+        max-width: 480px;
         float: right;
     }
     
@@ -632,19 +646,20 @@ li {
     
     .info_comment {
         overflow: hidden;
-        width: 251px;
+        width: 100%;
         height: 144px;
     }
     
     .col_width_upd {
 /*        width: 74%;*/
-        width: 322px;
+        /* width: 322px; */
         margin: 0 auto;
         overflow: hidden;
+        float: right;
     }
     
     .col_upd {
-        width: 322px;
+        width: auto;
     }
     
     .info_headline {
@@ -664,17 +679,18 @@ li {
     }
     
 /*GRAY SECTION 768*/
-    
+
     .txt_gray_sec {
-        width: 207px;
+        width: 100%;
         height: 192px;
         float: left;
     }
     
 /*FOOTER 768 Not done */
-       .footer {
+    .footer {
         text-align: center;
     }
+    
     .info_footer {
         padding-bottom: 30px;
         float: right;
@@ -708,7 +724,165 @@ li {
     
 
     
+} /*End of 768px des*/
+
+@media (min-width: 960px) {
+
+/*HEADER 960px*/    
+    
+    .headers_head {
+        margin-bottom: 20px;
+    }
+    
+    .logo {
+        float: left;
+        
+    }
+    
+    .logo_gray {
+        text-shadow: 0 1px 0 white;
+        color: #454545;
+        font-family: "League Gothic";
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 40px;
+    }
+    
+    .logo_gradiented_gray {
+        color: #b9b9b9;
+    }
+    
+    .copy_gray {
+        text-shadow: 0.5px 0.9px 0 white;
+        color: #c5c5c5;
+        font-family: Georgia;
+        font-size: 16px;
+        font-style: italic;
+        margin-top: 48px;
+    }
+    
+    .menu_nav {
+        font-size: 24px;
+        display: inline-block;
+        float: right; 
+        width: 360px; 
+        padding: 0; 
+    }
+    
+    .losung {
+        margin: -108px auto 0;
+        width: 465px;
+    }
+    
+    .info_losung {
+        height: 144px;
+    }
+    
+/*SECTION PURPLE 960*/
+    
+    /* .txt_right {
+        width: 80%;
+    } */
+    
+    .menu_item_content {
+        width: 271px;
+    }
+    
+    .txt_purple_height {
+        height: 144px;
+        width: 227px;
+    }
+
+/*SECTION LITE GRAY 960*/
+    
+    .txt_white {
+        position: relative;
+        background-color: #fff;
+        padding: 27px 31px 33px 34px;
+        width: 355px;
+        float: right;
+    }
+    
+    .img_client {
+        width: 49px;
+        height: 49px;
+        background: url(../img/client.png) center center no-repeat;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: -20px;
+    }
+    
+    .headline_client {
+        display: inline-block;
+    }
+    
+    .col_upd {
+        width: 444px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    
+     .col_width_upd {
+/*        width: 74%;*/
+        width: 440px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    .info_headline {
+        font-family: "Open Sans Extrabold";
+        width: 258px;
+        overflow: hidden;
+        height: 24px;
+    }
+    
+    .info_upd {
+        width: 375px;
+        overflow: hidden;
+        height: 24px;
+    }
+    
+    .info_comment {
+        overflow: hidden;
+        width: 355px;
+        height: 168px;
+    }
+    
+    
+/*SECTION WITH LOGOES 960*/
+    .col_fullwidth {
+        width: 800px;
+    }
+    
+    .menu_item_content_footer {
+        width: auto;
+    }
+    
+/*GRAY SECTION 960px*/    
+    .section_gray{
+        display: none;
+    }
+    
+    .section_gray_biggest{
+        display: block;
+    }
+    
+/*FOOTER 960px*/    
+    
+    .info_footer {
+        padding-top: 20px;
+        float: right;
+    }
+    
+    .menu_nav_foot {
+        float: left;
+        width: 80%;
+        padding: 20px 0;
+    }
 }
+
+
 
 
 /*TODO:
@@ -722,3 +896,12 @@ TODO 27.10.16:
 2.Доделать предыдущие
 3.Сделать некст
 */
+
+/*
+ TODO 27.10.10:52
+    1. PP
+    2. 768 - менюшки в топе и футере
+    3. 480 - коммент 2  заголовок в линию   
+    4. 960px
+    5. Ду некст
+    
