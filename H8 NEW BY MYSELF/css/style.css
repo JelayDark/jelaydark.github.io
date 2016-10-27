@@ -57,6 +57,8 @@ li {
     font: 400 18px / 24px LeagueGothic;
     float: right;
     text-transform: uppercase;
+    margin-top: 15px;
+    margin-right: 7px;
 }
 
 .link:hover {
@@ -67,7 +69,7 @@ li {
     display: inline-block;
     width: 47px;
     font: 400 24px / 33.724px LeagueGothic;
-    padding: 4px 0;
+/*     padding: 4px 0; */
     border-bottom: 2px solid #edbfff;
     margin: 0 auto;
     float: none; 
@@ -83,7 +85,7 @@ li {
     background: transparent;
     list-style: none;
     width: 246px;
-    margin: 0 auto;
+    margin: 30px auto;
     position: relative;
 }
 
@@ -150,6 +152,8 @@ li {
 
 .section_head_shad {
     background: transparent;
+    margin-top: 127px;
+    margin-bottom: 75px;
 }
         
 .img_losung {
@@ -160,7 +164,9 @@ li {
     position: static;
     float: none;
     text-align: left;
+    /* margin-left: 55px; */
     margin: 0 auto;
+    padding-left: 10px;
     width: 202px;
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
@@ -176,6 +182,7 @@ li {
     color: #fefefe;
     font: 400 36px / 24px LeagueGothic;
     text-transform: capitalize;
+    margin-bottom: 5px;
 }
 
 .info_losung {
@@ -188,13 +195,13 @@ li {
 }
 
 .circles {
-    margin: 20px auto;
+    margin: 0 auto;
     width: 86px;
 }
 
 .circle {
-    width: 17px;
-    height: 17px; 
+    width: 16px;
+    height: 16px; 
     display: inline-block;
     background-color: rgba(0,0,0,0.5);
     border-radius: 50%;
@@ -218,27 +225,32 @@ li {
     background: -o-linear-gradient(bottom, #322539, #745083);
     background: -ms-linear-gradient(bottom, #322539, #745083);
     background: linear-gradient(to top, #322539, #745083);
-    padding: 70px 0 41px;
+    padding: 55px 0 40px;
     border-top: 1px solid #000;
     border-bottom: 1px solid #fff;
 }
 
 .col {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 22px;
+}
+
+.col_big_marg {
+    margin-top: 38px;
 }
 
 
 .img_left {
-    width: 24px;
-    height: 25px;
+    width: 30px;
+    height: 31px;
     background: url(../img/wrench.png) center center no-repeat;
-    margin-right: 20px;
+    margin-right: 21px;
+    margin-left: 10px;
     float: left;
 }
 
 .txt_right {
-    width: 74%;
+    width: 68%;
     text-align: left;
     float: left;
 }
@@ -260,12 +272,14 @@ li {
 .section_lgray {
     color: #454545;
     background: #f9f9f9;
+    padding-top: 52px;
 }
 
 .txt_white {
     position: relative;
     background-color: #fff;
-    padding: 27px 31px 33px 34px;
+    padding: 26px 31px 31px 34px;
+    margin-left: 25px;
     /* width: 84%; */
     /* min-width: 180px; */
 /*   max-width: 430px;*/
@@ -290,7 +304,7 @@ li {
     margin: 0;
     position: absolute;
     top: 20px;
-    left: -33px;
+    left: -20px;
 }
 
 .circle_white {
@@ -312,9 +326,13 @@ li {
     float: left;
 }
 
+.col_width_upd {
+    margin-top: 47px;
+}
+
 .col_upd {
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
 }
 
 .img_upd {
@@ -338,6 +356,8 @@ li {
 }
 
 .link_black {
+    margin-top: -5px;
+    margin-bottom: 65px;
     color: #454545;
 }
 
@@ -353,6 +373,10 @@ li {
     text-align: center;
 } */
 
+.col_fullwidth {
+    margin-top: 50px;
+}
+
 .menu_item_content_footer {
     display: inline-block;
     width: 40%;
@@ -361,6 +385,7 @@ li {
 
 .img_logo {    
     margin: 0 auto;
+    margin-top: 46px;
 }
 
 .img_logo_1 {
@@ -423,7 +448,7 @@ li {
 }
     
 .info_footer {
-    padding: 40px 0;
+    padding: 32px 0 137px;
     display: block;
     font: 300 12px / 33.724px "Open Sans Light";
     margin: 0 auto;
