@@ -1,69 +1,69 @@
-//function Stopwatch() {
-//    var second = document.getElementById('s'), 
-//        minute = document.getElementById('m'), 
-//        hour = document.getElementById('h'), 
-//        milisecond = document.getElementById('ms');
-//        
-//    milisecond = +milisecond;
-//    
-//    milisecond++;
-//    
-//    if (milisecond === 1000) {
-//        second++;
-//        milisecond = 0;
-//    }
-//    
-//    if (second === 60) {
-//        minute++;
-//        second = 0;
-//    }
-//    
-//    if (minute === 60) {
-//        hour++;
-//        minute = 0;
-//    }
-//    
-//    console.log ('milisecond:' +milisecond);
-//    $('.stopwatch_block').text(hour + ':' + minute + ':' + second + '.' + milisecond);
-//}
-//
-//function start_timer() {
-//    setInterval(Stopwatch, 1000);
-//}
+var timer;
+var flag = 0;
+var startDate;
+var sec = '00';
+var min = '00';
+var hr = '00';
+var misec = '00';
 
-
-var sec = 0;
-var min = 0;
-var hr = 0;
-var misec = 0;
-function stopwatch () {
-    
+function stopwatch() {
     misec++;
-    
-    if (misec === 1000) {
+    if (misec === 100) {
         misec = 0;
         sec++;
+        if (sec < 10) sec = '0' + sec;
         if (sec === 60) {
             sec = 0;
             min++;
+            if (min < 10) min = '0' + min;
             if (min === 60) {
                 min = 0;
                 hr++;
+                if (hr < 10) hr = '0' + hr;
             }
         }
     }
-    
+    if (misec < 10) misec = '0' + misec;
     var watch = document.getElementById('stopwatch_block');
-    watch.innerHTML=hr+':'+min+':'+sec+':'+misec;
-    
-//    console.log ('misec:'+misec);
-//    
-//    console.log(hr+':'+':'+min+':'+sec+':'+misec);
-    
+    watch.innerHTML = hr + ':' + min + ':' + sec + '.' + misec;
+    timer = setTimeout(stopwatch, 10);
 }
 
 function start_timer() {
-    setInterval(stopwatch, 1);
+    if (flag == 0) {
+        startDate = new Date();
+        stopwatch();
+        flag = 1;
+        var s_btn = document.getElementById('s_btn');
+        s_btn.innerHTML = 'PAUSE IT';
+    }
+    else {
+        pause_timer();
+    }
 }
 
+function pause_timer() {
+    clearTimeout(timer);
+    flag = 0;
+    var s_btn = document.getElementById('s_btn');
+    s_btn.innerHTML = 'START IT';
+}
 
+function stop_timer() {
+    clearTimeout(timer);
+    var watch = document.getElementById('stopwatch_block');
+    watch.innerHTML = '00:00:00.00';
+    timer = 0;
+    hr = min = sec = msec = '00';
+    flag = 0;
+    var s_btn = document.getElementById('s_btn');
+    s_btn.innerHTML = 'START IT';
+    document.getElementById('lbl_block').innerHTML = '';
+}
+
+function mark() {
+    if (timer > 0) {
+        var lbl = document.getElementById('lbl_block');
+        lbl.innerHTML = lbl.innerHTML + '<br>' + document.getElementById('stopwatch_block').innerHTML;
+    }
+}

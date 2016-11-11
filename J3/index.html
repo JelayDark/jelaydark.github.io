@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>JS#3</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-   
-   <div id="stopwatch_block">
-       <span id="h">00</span>:<span id="m">00</span>:<span id="s">00</span>
-       <span id="ms">000</span>
-   </div>
-   <button onclick="start_timer()"> START IT </button>
-    
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css"> </head>
+
+<body style="background-color:#FFBAD2;">
+    <center>
+        <h2 class="" id="stopwatch_block"> 00:00:00.00
+           </h2>
+        <button class="btn btn-primary" id="s_btn" onclick="start_timer()"> START IT </button>
+        <button class="btn btn-danger" onclick="stop_timer()"> STOP IT </button>
+        <button class="btn btn-warning" onclick="mark()"> MARK IT </button>
+        <div>
+            <label id="lbl_block"> </label>
+        </div>
+        <script src="js/script.js"></script>
+    </center>
 </body>
+
 </html>

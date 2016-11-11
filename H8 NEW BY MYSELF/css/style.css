@@ -70,11 +70,12 @@ li {
     display: inline-block;
     width: 47px;
     font: 400 24px / 33.724px LeagueGothic;
-/*     padding: 4px 0; */
-    border-bottom: 2px solid #edbfff;
+    /* padding: 4px 0; */
     margin: 0 auto;
     float: none; 
+    border-bottom: 2px solid #edbfff;
     border-top: 1px solid transparent;
+    padding-top: 10px;
 }
 
 
@@ -116,8 +117,14 @@ li {
     padding: 4px 0;
     border-top: 1px solid rgba(237,191,255,.3);
     border-bottom: 1px solid rgba(54,41,62,.9);
+    margin: 0;
 }
 
+
+.menu_item_home {
+    display: block;
+    padding: 20px 0 5px;
+}
 .submenu_link:hover {
     background: rgba(54,41,62,.9);
     border-color: #edbfff;
@@ -128,7 +135,7 @@ li {
     background: rgba(54,41,62,.5);
     display: none;
     position: absolute;
-    top: 44px;
+    top: 35px;
     left: 0;
     z-index: 2;
     border-radius: 0 0 12px 12px;
@@ -251,7 +258,7 @@ li {
 }
 
 .txt_right {
-    width: 68%;
+    width: 71%;
     text-align: left;
     float: left;
 }
@@ -484,7 +491,11 @@ li {
     .link {
         margin-right: -2px;
     }
-    
+    /*HERE*/
+    .submenu_link {
+        margin-right: 0;
+    }
+        
     .section_head_shad {
         background: rgba(0,0,0,.3);
         height: 249px;
@@ -1195,6 +1206,10 @@ li {
         margin-top: 3px;
     }
     
+    .img_left_saying {
+        background: 
+    }
+    
     .info {
         margin-top: 11px;
     }
@@ -1207,9 +1222,9 @@ li {
         /* width: 271px; */
     }
     
-    .menu_item_content_last {
+    /* .menu_item_content_last {
         margin-right: -24px;
-    }
+    } */
     
     .txt_purple_height {
         height: 155px;
@@ -1403,4 +1418,6 @@ TODO 4.11.16
 1.Menues submenu
 2. Icons 
 3. PIgbuller & newsupd
+4. Troubles with Read more
+5. Do other links "read more & etc."
     
