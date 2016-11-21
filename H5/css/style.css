@@ -206,6 +206,8 @@ button[type=submit] {
     border: 0;
     border-radius: 3px;
     color: #fff;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.09) 0%, rgba(0, 0, 0, 0.09) 20%, rgba(255, 255, 255, 0.09) 100%);
+    border: 1px solid #e68e16;
     background: url(../img/btnreg.png) no-repeat;
     
 }

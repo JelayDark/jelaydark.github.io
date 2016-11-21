@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>J5 The second ATtempt | Tulyakov Eugeniy</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/cusel.css"> -->
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/jquery-carousel.js"></script>
+    <script type="text/javascript" src="js/script-settings-carousel.js"></script>
+    <script type="text/javascript" src="js/script-checkboxes.js"></script>
+<!--
+    <script type="text/javascript" src="js/cusel.min.js"></script>
+    <script type="text/javascript" src="js/script-cusel.js"></script>
+-->
+    
+    <link rel="stylesheet" href="css/chosen.css">
+    <script type="text/javascript" src="js/chosen.jquery.js"></script>
+    <script type="text/javascript" src="js/script-chosen.js"></script>
+    <script type="text/javascript" src="js/script-menues.js"></script>
+    <script type="text/javascript" src="js/jquery-colors.js"></script>
+    
+<!--    <script type="text/javascript" src=""></script>-->
+</head>
+<body>
+    <div class="wrapper">
+        <center>
+            <section class="f_part">
+               
+                <h1> Part 1. My Carousel </h1>
+                
+                <div class="wrapper_carousel">
+                   
+                    <div class="jcarousel">
+                       
+                        <ul>
+                            <li><img src="img/Slide1text.png" alt=""> </li>
+                            <li><img src="img/Slide2text.png" alt=""> </li>
+                            <li><img src="img/Slide3text.png" alt=""> </li>
+                        </ul>
+                        
+                    </div>
+                    
+                    <a href="#" class="j_car_prev"> &larr; </a> 
+                    <a href="#" class="j_car_next"> &rarr; </a> 
+                    
+                </div>
+                
+                <div class="j_car_pag"></div>
+                
+            </section>
+        
+        <section class="s_part">
+        <div class="chb">
+        <h2> Part 2. My Checkboxes </h2>
+        
+        <form action="#" class="checkform">
+            <div>
+            <label for="chb-1">CHECKBOX-1</label>
+            <input class="my_chb" type="checkbox" id="chb-1" > </div>
+                        <div>
+            <label for="chb-2">CHECKBOX-2</label>
+            <input type="checkbox" id="chb-2" class="my_chb" checked> </div>
+                        <div>
+            <label for="chb-3">CHECKBOX-3</label>
+            <input type="checkbox" id="chb-3" class="my_chb" checked> </div>
+                        <div>
+            <label for="chb-4">CHECKBOX-4 BLOCKED</label>
+            <input type="checkbox" id="chb-4" class="my_chb" disabled> </div>
+       
+        </form>
+            
+        </div>
+        <div class="chb">
+            
+        
+        <h2> Part 2.1. CSS-Checkboxes </h2>
+        
+        <form action="#" class="checkform">
+           
+            <div><input class="css_chb" type="checkbox" id="cssch-1" >      
+            <label  class="chb-name" for="cssch-1">CSSBOX-1</label></div>
+            <div><input type="checkbox" id="cssch-2" class="css_chb" checked>
+            <label  class="chb-name" for="cssch-2">CSSBOX-2</label></div>
+            <div><input type="checkbox" id="cssch-3" class="css_chb" checked>
+            <label  class="chb-name" for="cssch-3">CSSBOX-3</label></div>
+            <div><input type="checkbox" id="cssch-4" class="css_chb" disabled>
+            <label  class="chb-name" for="cssch-4">CSSBOX-4 BLOCKED</label></div>
+        </form>
+        
+        </div>
+            
+        </section>
+        
+        <section class="t_part">
+            
+        
+        <h1> Part 3. Cusel</h1>
+        <form action="#">
+          <div class="LittleSel">
+            <label for="cuselSelect">SELECT:</label> 
+              
+        <select id="cuselSelect" name="LSel">
+            <option value="1">I Like that HW</option>
+            <option value="2">I like teaching</option>
+            <option value="3">I like read smthing new</option>
+            <option value="4">My mentor I like u</option>
+        </select>
+          </div>
+          
+          <h5>Due to the fact that the plug-in &#39;Cusel&#39; supports only jQuery library v1.64 and older, I use &#39;Chosen&#39; plug-in:</h5>
+            <div class="BigSel" >
+               <label for="cuselSelect">SELECT:</label>
+                <select id="cuselSelect2" name="BSel">
+                    <option value="1">
+                        I_am_1
+                    </option>
+                    <option value="2">
+                        I_am_2
+                    </option>
+                    <option value="3">
+                        I_am_3
+                    </option>
+                    <option value="4">
+                        I_am_4
+                    </option>
+                    <option value="5">
+                        I_am_5
+                    </option>
+                    
+                </select>
+            </div>  
+        
+        </form>
+        </section>
+        
+        <section class="f_part">
+            
+        <h1> Part 4. Double Dropdown </h1>
+
+        <div class="menu_div">
+            
+            <ul class="menu clearfix">
+                <li><a href="#" class="menu_item">1. U R HERE</a></li>
+                <li class="li_sub"><a href="#" class="menu_item with_sub">2. First submenu</a> 
+                    <ul class="submenu">
+                        <li><a href="#" class="menu_item menu_item_sub">2.1. MenuItem</a></li>
+                        <li class="li_sub_sub"><a href="#" class="menu_item menu_item_sub sub_with_sub">2.2. Second submenu</a>
+                        
+                        <ul class="submenu_sec">
+                            <li><a href="#" class="menu_item menu_item_sub menu_item_subsub">2.2.1. HTML</a></li>
+                            <li><a href="#" class="menu_item menu_item_sub menu_item_subsub">2.2.2. CSS</a></li>
+                            <li><a href="#" class="menu_item menu_item_sub menu_item_subsub">2.2.3. Javascript</a></li>
+                            <li><a href="#" class="menu_item menu_item_sub menu_item_subsub">2.2.4. JQuery</a></li>
+                        </ul>
+                        
+                        </li>
+                        <li><a href="#" class="menu_item menu_item_sub">2.3. Here is nothing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="menu_item">3. Just 4 amount</a></li>
+                
+            </ul>
+            
+            
+        </div>
+        
+        </section>
+    </center>
+        
+            
+                
+                    
+                        
+                            
+                                
+                                        
+    </div>
+</body>
+</html>
+    
