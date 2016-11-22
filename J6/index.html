@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/my-carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+<!--  scripts  -->
+   <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+   
+   <script type="text/javascript" src="js/tmpl.js"></script>
+   <script type="text/javascript" src="js/my-template.js"></script>
+   
+   <script type="text/javascript" src="js/script-my-carousel.js"></script>
+   <script type="text/javascript" src="js/script-my-car-settings.js"></script><!--Do it + Превратить в шаблон-->
+
+   
+    <title>HW JS Number 6 | Tulyakov Eugeniy</title>
+</head>
+<body>
+    
+
+       <div class="wrapper">     
+        <section class="profile">
+            <script type="text/template" id="temp_pro">
+            
+            <h1><%= name%></h1>
+            <div class="carousel_wrapper clearfix">
+                <div class="car_control_left"> &larr; </div>
+                <div class="car_hider">
+                    <ul class="my_car_list">
+                        <% for(var i = 0; i<photoes.length; i++) { %>
+                            <li class="car_el"><img src='<%=photoes[i].src %>'></li>
+                        <% }; %>
+                    </ul>
+                </div>
+                <div class="car_control_right"> &rarr; </div>
+            </div>
+            
+            <p><%= who%></p>
+            
+            <% for(var i = 0; i<parts.length; i++) { %>
+            
+            <hr class="<%= parts[i].hr_class %>">
+            <h3><%= parts[i].title %>:</h3>
+            
+            <% if (i==0) {%>
+                <ul>
+                    <% for(var j = 0; j<parts[0].whyObj.length; j++) { %>
+                            <li><%=parts[0].whyObj[j].text %></li>
+                    <% }; %>
+                </ul>
+            <% } else { %>
+            <div><%= parts[i].content %></div>
+            <% }; %>
+            
+            <% }; %>
+            
+
+            </script> 
+        </section>
+        
+        
+        
+    </div>
+    
+    
+</body>
+</html>
+
+
+<!--MY CAROUSEL HTML:-->
+<!--
+        <section class="my-carousel">
+           <div class="car_control_left"> &larr; </div>
+            <div class="car_hider">
+            <ul class="my_car_list">
+                <li class="car_el"><img src="img/me_1.jpg" alt=""></li>
+                <li class="car_el"><img src="img/me_2.jpg" alt=""></li>
+                <li class="car_el"><img src="img/me_3.jpg" alt=""></li>
+                <li class="car_el"><img src="img/me_4.jpg" alt=""></li>
+            </ul>
+                
+            </div>
+           <div class="car_control_right"> &rarr; </div>
+            
+            
+        </section>
+-->

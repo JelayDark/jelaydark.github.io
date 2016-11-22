@@ -46,9 +46,20 @@ $(function () {
     console.log('$input - ', $input);
     
     $input.on('mouseenter', function () {
-        var $help = $(this).siblings('.help');
-        $help.fadeIn();
+        var $help = $(this).attr('title');
         console.log('$HELP - ', $help);
+        
+        $('<span>').css({
+            position: 'absolute',
+            display: 'block',
+            left: 100,
+            top: 20,
+            boxShadow: '0 0 2px #000',
+        }).innerHTML($help).insertAfter($input);
+        
+        
+        
+//        $help.fadeIn();
     })
     
     $input.on('mouseleave', function () {
