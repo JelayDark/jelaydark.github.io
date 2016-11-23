@@ -42,6 +42,7 @@ $(function(){
     };
     
     var html = $('#temp_pro').html();
+//    console.log('html', html);
     var doFE = tmpl(html, dataObj);
 
     $('.wrapper').append(doFE);
