@@ -1,5 +1,5 @@
 .con_w {
-    padding: 0 20px;
+/*    padding: 0 20px;*/
     min-width: 280px;
     max-width: 960px;
     text-align: center;
@@ -292,7 +292,7 @@ li {
 .txt_white {
     position: relative;
     background-color: #fff;
-    padding: 26px 31px 31px 34px;
+    padding: 26px 31px 31px 31px;
     margin-left: 25px;
     /* width: 84%; */
     /* min-width: 180px; */
