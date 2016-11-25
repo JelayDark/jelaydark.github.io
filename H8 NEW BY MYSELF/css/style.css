@@ -1,3 +1,8 @@
+body {
+	min-width: 300px;
+}
+
+
 .con_w {
 /*    padding: 0 20px;*/
     min-width: 280px;
@@ -224,8 +229,8 @@ li {
 }
 
 .shaped {
-    height: 11px;
-    width: 11px;
+    height: 10px;
+    width: 10px;
     background-color: #fff;
     border-radius: 50%;
     margin: 3px auto;
@@ -359,7 +364,7 @@ li {
 }
 
 .info_headline {
-    font-family: "Open Sans Extrabold";
+    font-family: 'Open Sans Extrabold';
     width: 60%;
     overflow: hidden;
     height: 24px;
@@ -481,7 +486,7 @@ li {
 .link_footer {
     float: none;
     text-transform: none;
-    font: 700 12px / 33.724px "Open Sans Extrabold";
+    font: 700 12px / 33.724px 'Open Sans Extrabold';
 }
 
 
@@ -751,7 +756,15 @@ li {
         font-size: 24px;
         margin-top: 0;
         margin-right: -2px;
+		padding-bottom: 10px;
+		box-sizing: border-box;
     }
+	
+	.link_top_nav:hover {
+		padding-bottom: 8px;
+		border-bottom: 2px solid #edbfff;
+	}
+	
     .info_losung {
         height: 98px;
         overflow: hidden;
@@ -1174,7 +1187,7 @@ li {
         margin-left: 1px;
     }
     .info_headline {
-        font-family: "Open Sans Extrabold";
+        font-family: 'Open Sans Extrabold';
         width: 258px;
         overflow: hidden;
         height: 24px;
