@@ -21,7 +21,7 @@ $(function() {
         	var checkVar = $("input:radio:checked");
         	for (var i = 0; i<obj.length; i++) {
             	var newid = (checkVar[i].getAttribute('id') % 10) + 1;// номер ответа
-            	if(newid == obj[i].right) {j++;};
+            	if(newid == obj[i].check) {j++;};
             	checkVar[i].checked = false;
                 
         };

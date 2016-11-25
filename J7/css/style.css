@@ -33,7 +33,7 @@ input[type=radio] {
 label {
     cursor: pointer;
     display: inline-block;
-    width: 180px;
+    width: 400px;
     line-height: 27px;
 }
 
