@@ -1,0 +1,713 @@
+$wrapper_pd: 		20px 0;
+$wrapper_w: 		1160px;
+$colortext: 		#434343;
+$standartl-h: 		20px;
+$icon-size: 		16px;
+$darkbg_color:		#2a2d32;
+$menu_height: 		56px;
+$txticon-size: 		33px;
+$hover-color: 		#248cec;
+$img-size: 			260px;
+$news-i-size: 		150px;
+$news-date-size:	40px;
+$textArial:			400 12px/20px Arial;
+
+
+@mixin fullwidth_col() {
+  		width: 100%;
+		text-align: justify;
+		display: block;
+		padding: 0;
+		margin: 0;
+}
+
+@mixin fullwidth_after() {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 0;
+}
+
+@mixin fullwidth_item() {
+		float: none;
+		margin: 0;
+		display: inline-block;
+		list-style: none;
+}
+
+@mixin transition($time) {
+	-webkit-transition: all $time ease-in-out;
+	-moz-transition: all $time ease-in-out;
+	-o-transition: all $time ease-in-out;
+	-ms-transition: all $time ease-in-out;
+	transition: all $time ease-in-out;
+	
+}
+
+h1,
+p{
+	margin: 0;
+	padding: 0;
+}
+
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.wrapper {
+	padding: $wrapper_pd;
+	width: $wrapper_w;
+	margin: 0 auto;
+	&__footer {
+		padding: 0;
+	}
+	
+}
+
+header {
+	.logo {
+		float: left;
+		&__text {
+			display: inline-block;
+			&__headline {
+				height: 23px;
+				color: $colortext;
+				font-family: Ubuntu;
+				font-size: 30px;
+				font-weight: 500;
+				line-height: $standartl-h;
+			}
+			&__company {
+				width: 156px;
+				height: 8px;
+				opacity: 0.65;
+				color: #333;
+				font-family: Ubuntu;
+				font-size: 12px;
+				font-weight: 300;
+				line-height: $standartl-h;
+				text-transform: uppercase;
+			}
+		}
+	}
+	
+	.social_icons {
+		float: right;
+		ul {
+			li {
+				list-style: none;
+				float: left;
+				margin-right: 3px;
+				.icon {
+					display: block;
+					width: $icon-size;
+					height: $icon-size;
+					background: url('../../img/soc_icons.png') no-repeat;
+					opacity: 0.2;
+					&-facebook {
+						background-position: 0 0;
+					}
+					&-facebook:hover {
+						background-position: 0 -28px;
+					}
+					&-twitter {
+						background-position: -31px 0;
+					}
+					&-twitter:hover {
+						background-position: -31px -28px;
+					}
+					&-rss {
+						background-position: -62px 0;
+					}
+					&-rss:hover {
+						background-position: -62px -28px;
+					}
+					&-linkedin {
+						background-position: -96px 0;
+					}
+					&-linkedin:hover {
+						background-position: -96px -28px;
+					}
+					&-skype {
+						background-position: -129px -1px;
+					}
+					&-skype:hover {
+						background-position: -129px -29px;
+					}
+				}
+				.icon:hover {
+					opacity: 1;
+					@include transition(0.2s);
+				}
+			}
+		}
+	}
+}
+
+nav {
+	.menu {
+		width: 100%;
+		background-color: $darkbg_color;
+		padding: 0;
+		&_item {
+			list-style: none;
+			float: left;
+			a {
+				display: block;
+				line-height: $menu_height;
+				border-right: 1px solid black;
+				width: 114px;
+				text-align: center;
+				color: white;
+				font-family: "Ubuntu Condensed";
+				font-size: 14px;
+				font-weight: 400;
+				text-transform: uppercase;
+				text-decoration: none;
+			}
+			a:hover {
+				background-color: $hover-color;
+				@include transition(0.2s);
+			}
+			
+		}
+		&_right {
+			float: right;
+			margin-right: 5px;
+			list-style: none;
+			line-height: $menu_height;
+		}
+	}
+}
+
+.main {
+	&__columns{
+		@include fullwidth_col();
+		&_item{
+			@include fullwidth_item();
+			.big_num {
+				width: 80px;
+				height: 64px;
+				opacity: 0.1;
+				color: #2a2b2e;
+				font-family: Ubuntu;
+				font-size: 90px;
+				font-weight: 500;
+				line-height: $standartl-h;
+				display: inline-block;
+				float: left;
+				margin-top: 20px;
+				margin-right: 20px;
+			}
+			.text-right{
+				display: inline-block;
+				.text_icon {
+					width: $txticon-size;
+					height: $txticon-size;
+					background: url('../../img/txt_icons.png') no-repeat;
+					&-settings {
+						background-position: 0 -3px;
+					}
+					&-params {
+						background-position: -55px 0;
+					}
+					&-truck {
+						background-position: -111px -3px;
+					}
+				}
+				&__headline {
+					height: 15px;
+					color: #2a2b2e;
+					font-family: Ubuntu;
+					font-size: 20px;
+					font-weight: 500;
+					line-height: $standartl-h;
+				}
+				&__text {
+					width: 237px;
+					height: 60px;
+					color: #8a8a8a;
+					font: $textArial;
+					font-size: 13px;
+					overflow: hidden;
+				}
+				&__link {
+					color: #2a2b2e;
+					font-family: Ubuntu;
+					font-size: 13px;
+					font-weight: 500;
+					line-height: $standartl-h;
+					text-decoration: none;
+				}
+				&__link:hover {
+					color: $hover-color;
+					@include transition(0.2s);
+				}
+			}
+			
+		}
+	&:after {
+        @include fullwidth_after();
+    }
+	}
+}
+
+.dark {
+	background-color: $darkbg_color;
+	padding: $wrapper_pd;
+	&__headline {
+		color: white;
+		font-family: Ubuntu;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: $standartl-h;
+		margin-top: 0;
+	}	
+	&__columns {
+		@include fullwidth_col();
+		&_item {
+			@include fullwidth_item();
+			text-align: center;
+			.dark__linkblock__img {
+				width: $img-size;
+				height: $img-size;
+				position: relative;
+				z-index: 1;
+				&-1 {
+					background: url('../../img/img1.png') no-repeat;
+				}
+				&-2 {
+					background: url('../../img/img2.png') no-repeat;
+				}
+				&-3 {
+					background: url('../../img/img3.png') no-repeat;
+				}
+				&-4 {
+					background: url('../../img/img4.png') no-repeat;
+				}
+				&_over {
+					position: absolute;
+					width: $img-size;
+					line-height: $img-size;
+					top: 0;
+					left: 0;
+					background-color: $hover-color;
+					opacity: 0;
+					z-index: 2;
+					font-size: 45px;
+					vertical-align: middle;
+					text-align: center;
+					color: #fff;
+					font-family: Ubuntu;
+					font-weight: 200;
+				}
+			}
+			a {
+				text-decoration: none;
+				
+				&:hover {
+					text-decoration: none;
+					.dark__linkblock__img_over{
+					opacity: 0.9;
+						@include transition(0.2s);
+					}
+					.dark__linkblock__text {
+						color: #d6a116;
+					}
+			}
+			}
+			.dark__linkblock__text {
+				color: white;
+				font-family: Ubuntu;
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 20px;
+				margin-top: 20px;
+			}
+			
+			
+		}
+	&:after {
+        @include fullwidth_after();
+    }
+	}
+	
+}
+
+.news {
+	background-color: #f7f7f7;
+	padding: $wrapper_pd;
+	&__headline {
+		color: #2a2d32;
+		font-family: Ubuntu;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 20px;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	&_fullwidth {
+		@include fullwidth_col();
+		li {
+			@include fullwidth_item();
+		}
+		.news_block {
+			float: left;
+		}
+		.banners {
+			float: right;
+		}
+		&:after {
+			@include fullwidth_after();
+		}
+	} 
+	.news_list {
+		padding: 0;
+		list-style: none;
+		&_item {
+			display: block;
+			margin-top: 10px;
+		}
+		&__img {
+			width: $news-i-size;
+			height: $news-i-size;
+			position: relative;
+			display: inline-block;
+			&-1 {
+				background: url('../../img/news-1.png') no-repeat;
+			}
+			&-2 {
+				background: url('../../img/news-2.png') no-repeat;
+			}
+			&_month {
+				position: absolute;
+				width: $news-date-size;
+				background-color: $hover-color;
+				font-family: Ubuntu;
+				font-size: 18px;
+				font-weight: 500;
+				left: -10px;
+				top: 20px;
+				color: #fff;
+				text-align: center;
+				line-height: $news-date-size;
+			}
+			&_day {
+				@extend .news_list__img_month;
+				top: 60px;
+				background-color: #f4b60d;
+				color: #2a2b2e;
+			}
+		}
+		&__text {
+			display: inline-block;
+			margin-left: 10px;
+			&__headline {
+				color: #2a2d32;
+				font-family: Ubuntu;
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 20px;
+				text-decoration: none;
+				&:hover {
+					color: $hover-color;
+					text-decoration: none;
+				};
+			}
+			&__info {
+				font: $textArial;
+				font-size: 13px;
+				color: #9d9d9d;
+				a {
+					color: #0187f4;
+					text-decoration: none;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+			&__news {
+				width: 377px;
+				height: 95px;
+				color: #8a8a8a;
+				font: $textArial;
+				font-size: 13px;
+				overflow: hidden;
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+.accordion-container {
+	width: 520px;
+		label{
+			display: block;
+			position: relative;
+			color: #2a2d32;
+			font-family: Ubuntu;
+			font-size: 13px;
+			font-weight: 500;
+			line-height: 39px;
+			text-transform: uppercase;
+			z-index: 20;
+			cursor: pointer;
+			background-color: #fff;
+			padding-left: 30px;
+			margin: 3px 0;
+			border: 1px solid #e8e8e8;
+			&:hover {
+				background-color: #f4b60d;
+				color: white;
+			}
+		}
+		input:checked + label,
+		input:checked + label:hover{
+			background-color: #f4b60d;
+			color: white;
+		}
+		input{
+			display: none;
+		}
+		article{
+			position: relative;
+			overflow: hidden;
+			height: 0px;
+			z-index: 10;
+			margin-top: -1px;
+			@include transition(0.3s);
+		}
+		input:checked ~ article{
+			@include transition(0.3s);
+			height: 150px;
+		}
+		article p{
+			padding: 20px;
+			width: 510px;
+			height: 93px;
+			color: #8a8a8a;
+			font: $textArial;
+			font-size: 13px;
+		}
+
+}
+
+.logoes {
+	padding: 60px 100px;
+	ul {
+		@include fullwidth_col();
+		height: 62px;
+		li {
+			@include fullwidth_item();
+			a {
+				display: block;
+			}
+			.logo {
+				width: 143px;
+				height: 62px;
+				opacity: 0.65;
+//				background: url('../../img/logoes.png') no-repeat;
+				&-1 {
+//					background-position: 0 0;
+					background: url(../../img/logo_1.png) no-repeat;
+				}
+				&-2 {
+//					background-position: -143px 0;
+					background: url(../../img/logo_2.png) no-repeat;
+				}
+				&-3 {
+//					background-position: -286px 0;
+					background: url(../../img/logo_3.png) no-repeat;
+				}
+				&-4 {
+//					background-position: -429px 0;
+					background: url(../../img/logo_4.png) no-repeat;
+				}
+				&-5 {
+//					background-position: - 0;
+					background: url(../../img/logo_5.png) no-repeat;
+				}
+				&-6 {
+					background: url(../../img/logo_6.png) no-repeat;
+					
+				}
+			}
+		}
+		&:after {
+			@include fullwidth_after();
+		}
+	}
+}
+
+.footer__menu {
+	@include fullwidth_col();
+	&_item {
+		@include fullwidth_item();
+		&__headline {
+			color: white;
+			font-family: Ubuntu;
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 24px;
+			text-transform: uppercase;
+		}
+		.submenu {
+			padding: 0;
+			margin: 0;
+			&_item {
+				list-style: none;
+				display: block;
+				&__link {
+					display: block;
+					width: 268px;
+					opacity: 0.3;
+					color: white;
+					font: $textArial;
+					font-size: 13px;
+					line-height: 36px;
+					text-decoration: none;
+					&:hover {
+						color: $hover-color;
+						opacity: 1;
+//						transition: all 0.2s linear;
+					}
+				}
+				&-bordered {
+//					border-top: solid 1px rgba(256, 256, 256, .3);
+					border-bottom: solid 1px rgba(256, 256, 256, .3);
+					box-sizing: border-box;
+				}
+			}
+		}
+		
+	}
+	&:after {
+		@include fullwidth_after();
+	}
+}
+
+.darkest {
+	padding: $wrapper_pd;
+	background-color: #35383c;
+	.text {
+		opacity: 0.2;
+		color: white;
+		font: $textArial;
+		margin-right: 25px;
+		&__icon {
+			width: $icon-size;
+			height: $icon-size;
+			display: inline-block;
+			background: url('../../img/foot-icons.png') no-repeat;
+			margin-right: 3px;
+			margin-top: -3px;
+			vertical-align: middle;
+			&-loc {
+				background-position: 0 0;
+			}
+			&-phone {
+				background-position: -20px 0;
+			}
+			&-mail {
+				background-position: -41px 0;
+			}
+		}
+		&-copyright {
+			float: right;
+			margin: 0;
+		}
+	}
+	
+}
+
+
+// CAROUSEL
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+	width: 1160px;
+	margin: 0 auto;
+	text-align: center;
+	ul {
+		width: 20000em;
+		position: relative;
+
+		/* Optional, required in this case since it's a <ul> element */
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		/* Required only for block elements like <li>'s */
+		float: left;
+	}
+}
+
+.j_car_pag {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+	a {
+		text-decoration: none;
+		display: inline-block;
+		font-size: 11px;
+		height: 11px;
+		width: 11px;
+		line-height: 11px;
+		background: #fff;
+		color: #4E443C;
+		text-indent: -10000px; /*отступ первой строки блока текста - очень большой дабі убрать символ*/
+		margin-right: 7px;
+		border: 4px solid #fff;
+	//    box-shadow: 0 0 2px #4E443C;
+		&.active {
+			background: #4E443C;
+			color: #fff;
+			opacity: 1;
+			box-shadow: 0 0 2px #F0EFE7;
+		}
+	}
+}
+
+.searchbar {
+	display: inline-block;
+	position: relative;
+	input[type=search] {
+		width: 241px;
+		height: 40px;
+		background-color: rgba(255, 255, 255, 0.05);
+		border: 1px solid #181a1d;
+		padding: 5px 15px;
+//		opacity: 0.15;
+		color: rgba(256, 256, 256, .15);
+		font: $textArial;
+	}
+	input[type=submit] {
+		width: 38px;
+		height: 38px;
+		vertical-align: middle;
+		margin-left: -43px;
+		position: relative;
+		opacity: 0;
+	}
+	.searchbutt {
+		width: 38px;
+		line-height: 38px;
+		opacity: 0.15;
+		cursor: pointer;
+		position: absolute;
+		top: 10px;
+		left: 202px;
+		text-align: center;
+	}
+}
+
+
+     
