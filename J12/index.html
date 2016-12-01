@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS HW #12 | Tulyakov Eugeniy</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script data-main="js/forrequire" src="js/require.js"></script>
+	<script type="text/javascript" src="js/tmpl.js"></script>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<!--
+	<script type="text/javascript" src="js/Model.js"></script>
+	<script type="text/javascript" src="js/Controller.js"></script>
+	<script type="text/javascript" src="js/View.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+-->
+<!--	<script type="text/javascript" src=""></script>-->
+</head>
+<body>
+<h4>ToDo List:</h4>
+<script type="text/template" id="wrapper-template">
+
+<div class="wrapper row">
+	<div class="controlls col s8 offset-s2">
+		<input type="text" class="item-value" placeholder="Write smth u need to do...">
+		<button class="item-add btn">Add</button>
+
+	</div>
+
+	<ul class="item-list col s8 offset-s2"></ul>	
+</div>
+</script>
+	
+<script type="text/template" id="list-template">
+	<% for (var i = 0; i<data.length; i++) { %>
+		<li class="clearfix"><label><%= data[i] %></label> <input class="col s8 offset-s2" type="text"> <span data-value="<%= data[i] %>" class="item-delete"><i class="tiny material-icons">delete</i></span> <span data-value="<%= data[i] %>" class="item-edit"><i class="tiny material-icons">mode_edit</i></span> </li>
+	<% }; %>
+</script>
+	
+</body>
+</html>
