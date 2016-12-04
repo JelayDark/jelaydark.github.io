@@ -19,10 +19,10 @@ require(
 		
 		
 	],
-	function(Controller, Model, View, $) {
+	function(Controller, Model, View, jQuery) {
 		$(function() {
-			var firstToDoList = ['learn JS', 'Do LabWorks & HW', 'Many Cups of coffe'];
-			var model = new Model(firstToDoList);
+			var data = ['learn JS', 'Do LabWorks & HW', 'Many Cups of coffe'];
+			var model = new Model(data);
 			var view = new View(model);
 			var controller = new Controller(model, view);	
 });

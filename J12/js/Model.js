@@ -3,7 +3,6 @@ define (
 	['jquery'],
 	function(data) {
 		var self = this;
-		self.data = data;
 		self.addItem = function (item) {
 			self.data.push(item);
 			return self.data;
@@ -18,19 +17,9 @@ define (
 		};
 		
 		return {
-			removeItem: function(item) {
-			var index = data.indexOf(item);
-			if (index === -1) {
-				return;
-			};
-			self.data.splice(index, 1);
-			return data;
-		},
-			addItem: function (item) {
-			self.data.push(item);
-			return data;
-		},
-			data:data
+			removeItem: self.removeItem,
+			addItem: self.addItem,
+			data: self.data,
 		};
 		
 		

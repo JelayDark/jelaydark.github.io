@@ -3,7 +3,9 @@ $(function () {
 	$('button').click(StartSearch);
 	
 	
-	function StartSearch() {
+	function StartSearch(e) {
+		
+		e.preventDefault();
 		
 		
 		var $request = $('input').val();

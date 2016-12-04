@@ -15,22 +15,15 @@ define (
 			self.renderList(model.data);
 		};
 		self.renderList = function (data) {
-			var list = tmpl($('#list-template').html(), {data:data});
+			var list = tmpl($('#list-template').html(), {data});
 			self.elements.ListContainer.html(list);
 		};
 
 		init();
 	
 		return {
-			renderList: function (data) {
-			var list = tmpl($('#list-template').html(), {data:data});
-			self.elements.ListContainer.html(list);
-		},
-			elements: {
-				input: $('.item-value'),
-				addBtn: $('.item-add'),
-				ListContainer: $('.item-list')
-			}
+			renderList: self.renderList,
+			elements: self.elements
 		};
 	})
 
