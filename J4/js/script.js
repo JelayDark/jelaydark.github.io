@@ -7,70 +7,82 @@ $(function () {
     var $txt3 = $('.txt3');
     var $link = $('a');
     
-    console.log('butt1 - ', $btn1, 'butt2 - ', $btn2, 'butt3 - ', $btn3);
+    
     
     $btn1.on('click', function () {
         $txt1.slideToggle();
         $txt2.slideUp();
         $txt3.slideUp();
-        console.log('TXT1 - ', $txt1);
+        
     });
     
     $btn2.on('click', function () {
         $txt2.slideToggle();
         $txt1.slideUp();
         $txt3.slideUp();
-        console.log('TXT2 - ', $txt2);
+        
     });
     
     $btn3.on('click', function () {
         $txt3.slideToggle();
         $txt1.slideUp();
         $txt2.slideUp();
-        console.log('TXT3 - ', $txt3);
+        
     });
     
     $link.on('click', function () {
             var $firstPart = $('.wrapper');
             var $secondPart = $('form');
             $(this).text($firstPart.is(':visible') ? "Go to Text ❯" : "Go to Form ❯");
-            $firstPart.slideToggle(4000);
-            $secondPart.slideToggle(4000);
+            $firstPart.slideToggle(1000);
+            $secondPart.slideToggle(1000);
     })
         
 //PART #2 FORM
     
     var $input = $('.field');
     var $btn = $('.btn-help');
+	var $field = $('.form-control');
+	
+	var $span = document.createElement("span");
+	$input.append($span);
+	$span = $('span');
+	$span.css({
+		position: 'absolute',     
+		display: 'none',    
+		width: 200,
+		height: "auto",
+		background: 'yellow',
+		left: 330,     
+		top: 0,     
+		boxShadow: '0 0 2px #000',
+	});
+
+	
     
-    console.log('$input - ', $input);
     
-    $input.on('mouseenter', function () {
-        var $help = $(this).attr('title');
-        console.log('$HELP - ', $help);
-        
-        $('<span>').css({
-            position: 'absolute',
-            display: 'block',
-            left: 100,
-            top: 20,
-            boxShadow: '0 0 2px #000',
-        }).innerHTML($help).insertAfter($input);
-        
-        
-        
-//        $help.fadeIn();
-    })
     
-    $input.on('mouseleave', function () {
-        var $help = $(this).siblings('.help');
-        $help.fadeOut();
-        console.log('$HELP - ', $help);
-    })
+    $field.on('mouseenter', function () {
+		$span = $(this).siblings($span);
+		$span.stop();
+		
+		$span.text($(this).attr("title"));
+		$(this).removeAttr('title');
+		$span.fadeIn();
+    });
+    
+    $field.on('mouseleave', function () {
+		$(this).siblings($span).stop();
+		$(this).siblings($span).css ({
+			display: 'none',
+		})
+    });
     
     $btn.on('click', function (e) {
         e.preventDefault();
-        var $help = $('.help');
-        $help.fadeIn().delay(4000).fadeOut();
-    })
+        var $span = $('span');
+		$span.stop();
+		$span.each(function() {$(this).text($(this).siblings($field).attr("title"))});
+        $span.fadeIn().delay(4000).fadeOut();
+    });
 })
