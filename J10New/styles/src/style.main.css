@@ -361,16 +361,27 @@ nav .menu {
     z-index: 20;
     cursor: pointer;
     background-color: #fff;
-    padding-left: 30px;
+    padding-left: 50px;
     margin: 3px 0;
     border: 1px solid #e8e8e8; }
     .accordion-container label:hover {
       background-color: #f4b60d;
       color: white; }
+    .accordion-container label:before {
+      content: '-';
+      text-align: center;
+      position: absolute;
+      top: -1%;
+      left: -2px;
+      width: 40px;
+      font-size: 30px;
+      border-right: 1px solid rgba(0, 0, 0, 0.3); }
   .accordion-container input:checked + label,
   .accordion-container input:checked + label:hover {
     background-color: #f4b60d;
     color: white; }
+  .accordion-container input:checked + label:before {
+    content: '+'; }
   .accordion-container input {
     display: none; }
   .accordion-container article {
