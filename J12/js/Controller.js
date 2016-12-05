@@ -1,7 +1,10 @@
 define (
 'Controller',
 	['Model', 'View', 'jquery'],
-	function(model, view) {
+	function (model, view, $) {
+		
+		function Controller (model, view) {
+		
 		var self = this;
 	
 			view.elements.addBtn.on('click', addItem);
@@ -52,8 +55,8 @@ define (
 				}
 
 
-			};
-				return 123;
+			};}
+				return Controller;
 
 
 			}

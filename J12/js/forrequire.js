@@ -1,6 +1,6 @@
 requirejs.config({
 	paths: {
-		'jquery': 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'
+		'jquery': 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'
 	},
 	shin: {
 		'jquery': {
@@ -19,10 +19,10 @@ require(
 		
 		
 	],
-	function(Controller, Model, View, jQuery) {
+	function(Controller, Model, View, $) {
 		$(function() {
-			var data = ['learn JS', 'Do LabWorks & HW', 'Many Cups of coffe'];
-			var model = new Model(data);
+			var firstList = ['learn JS', 'Do LabWorks & HW', 'Many Cups of coffe'];
+			var model = new Model(firstList);
 			var view = new View(model);
 			var controller = new Controller(model, view);	
 });

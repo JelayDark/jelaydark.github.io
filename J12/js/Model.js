@@ -1,8 +1,13 @@
 define (
 'Model',
 	['jquery'],
-	function(data) {
+	function (data, $) {
+		
+		function Model (data) {
+		
 		var self = this;
+		self.data = data;
+		
 		self.addItem = function (item) {
 			self.data.push(item);
 			return self.data;
@@ -16,11 +21,15 @@ define (
 			return self.data;
 		};
 		
-		return {
-			removeItem: self.removeItem,
-			addItem: self.addItem,
-			data: self.data,
-		};
+		return self;}
+		
+		return Model;
+		
+//		return {
+//			removeItem: self.removeItem,
+//			addItem: self.addItem,
+//			data:self.data,
+//		};
 		
 		
 	})

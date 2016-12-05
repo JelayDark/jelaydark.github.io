@@ -1,7 +1,10 @@
 define (
 'View',
 	['Model', 'jquery'],
-	function(model) {
+	function (model, $) {
+		
+		function View (model) {
+		
 		var self = this;
 	
 		function init() {
@@ -15,16 +18,20 @@ define (
 			self.renderList(model.data);
 		};
 		self.renderList = function (data) {
-			var list = tmpl($('#list-template').html(), {data});
+			console.log ('data :', data);
+			var list = tmpl($('#list-template').html(), {data:data});
 			self.elements.ListContainer.html(list);
 		};
 
 		init();
 	
-		return {
-			renderList: self.renderList,
-			elements: self.elements
-		};
+		return self;}
+		
+		return View;
+//		return {
+//			renderList: self.renderList,
+//			elements: self.elements
+//		};
 	})
 
 ////////////////////////////OLD
