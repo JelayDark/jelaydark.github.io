@@ -3,6 +3,6 @@ node_modules/*
 test/*
 J10/
 J10_p2/
-
+bower_components/
 J11part2/
 J11part3/

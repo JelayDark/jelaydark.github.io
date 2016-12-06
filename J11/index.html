@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>J7 HW | Tulyakov Eugeniy</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/tmpl.js"></script>
+    
+<!--    <script type="text/javascript" src="js/script.js"></script>-->
+<!--    <script type="text/javascript" src="js/locStor.js"></script>-->
+    <script type="text/javascript" src="js/my-template.js"></script>
+    <script type="text/javascript" src="js/new_script.js"></script>
+    <script type="text/javascript" src="js/templaiting.js"></script>
+    
+    
+</head>
+<body>
+    
+    
+    
+    <script type="text/template" id="test_test">
+            <div class="wrapper">
+            
+            <h1>Очень Важный Тест</h1>
+            <form action="#">
+            <ol>
+            <% for (var i = 0; i<obj.length; i++) { %>
+                <li><p><%= obj[i].title %></p>
+                    <ul>
+            
+                        <% for(var j = 0; j<obj[i].answers.length; j++) { %>
+                            <li><input type="radio" name="q_<%= i%>" id="<%= i%><%= j%>" class="radio" onclick="foo(this)"><label for="<%= i%><%= j%>" class="radio_name"><%= obj[i].answers[j].txt %></label></li>
+                        <% }; %>
+            
+                    </ul>
+                </li>
+            <% }; %>
+            </ol>
+            <button type="submit" class="btn btn-primary disabled " disabled>Проверить ответы</button>
+            </form>
+            </div>
+    </script> 
+    
+	<div class="modal_w" id="my_Modal">
+		<div class="my_m_content">
+			<div class="my_m_header">
+				<h4 class="my_m_title">Modal title</h4> </div>
+			<div class="my_m_body"> </div>
+			<div class="my_m_footer">
+				<button class="btn btn-default">Попробовать снова</button>
+			</div>
+		</div>
+	</div>
+   
+</body>
+</html>
