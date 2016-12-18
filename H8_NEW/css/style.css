@@ -257,6 +257,7 @@ li {
 
 .col-bigmargin {
 	margin-top: 38px;
+	width: 92%;
 }
 
 .img-left {
@@ -588,7 +589,8 @@ li {
 	}
 	.col-width-upd {
 		min-width: 340px;
-		width: 66%;
+		width: 76%;
+		max-width: 360px;
 		margin: 0 auto;
 		float: none;
 	}
@@ -871,6 +873,7 @@ li {
 		padding-left: 10px;
 	}
 	.col-width-upd {
+		max-width: none;
 		/*        width: 74%;*/
 		/* width: 322px; */
 		margin: 0 auto;
@@ -885,7 +888,7 @@ li {
 	.headline-upd {
 		font-size: 31px;
 		margin-left: 7px;
-		margin-top: 69px;
+		margin-top: 40px;
 	}
 	.img-upd {
 		margin-right: 16px;
@@ -1169,6 +1172,7 @@ li {
 		margin-bottom: 16px;
 	}
 	.col-width-upd {
+/*		max-width: none;*/
 		/*        width: 74%;*/
 		width: 440px;
 		margin: 0 auto;
