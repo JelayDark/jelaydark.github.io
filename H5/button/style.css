@@ -1,0 +1,41 @@
+.button {
+	width: 276px;
+/*	height: 35px;*/
+	background-color: #344c88;
+	border-radius: 5px;
+/*	text-align: left;*/
+	line-height: 35px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.face_letter {
+	display: inline-block;
+	width: 35px;
+	text-align: center;
+	border-right: 1px solid #223c6d;
+	margin-right: 0;
+	font-size: 18px;
+}
+
+.face_login {
+	display: inline-block;
+	margin-left: -4px;
+	padding-left: 31px;
+	border-left: 1px solid #4c68a9;
+	
+}
+
+.tight {
+	font-weight: normal;
+}
+
+.face_bigger {
+	margin-left: 20px;
+    font-size: 18px;
+}
+
+
+
+
+
