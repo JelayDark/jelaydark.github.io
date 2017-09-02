@@ -75,7 +75,7 @@ ready(() => {
         auto(input.value);
     }
 
-    document.onclick = (e) => {
+    document.addEventListener("click", (e) => {
         if(e.target.classList.contains('clear')) {
             input.value = '';
             input.focus();
@@ -85,6 +85,5 @@ ready(() => {
             }
             cityResult.innerHTML = '';
         }
-    }
-
+    })
 })
