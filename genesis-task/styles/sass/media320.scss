@@ -1,0 +1,66 @@
+@media(max-width: 479px) {
+
+    .top-girls {
+        display: none;
+    }
+
+    main {
+        h1 {
+            margin-top: 40px;
+        }
+        
+        .form-search {
+            .search-item {
+                .wrapper-range {
+                    .range-span {
+                        display: block;
+                        text-align: center;
+                    }
+                    #range {
+                        width:80%; 
+                    }
+                }
+            }
+        }
+
+        .menu-switcher {
+            .menu-item {
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+        
+        .list-result {
+            max-height: 400px;
+            overflow-y: hidden;
+            text-align: center;
+            .res-item {
+                width: 100%;
+                .info {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    footer {
+        .menu-bottom {
+            .menu-item {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        .copyright {
+            text-align: center;
+            p {
+                display: inline-block;
+                max-width: 60px;
+                overflow: hidden;
+                max-height: 20px;
+            }
+
+        }
+    }
+}
