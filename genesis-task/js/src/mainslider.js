@@ -345,7 +345,8 @@ ready(() => {
 
     formSearchButton.onclick = (e) => { //SEARCHING GIRLS
         e.preventDefault();
-        const valueCity = document.querySelector('input[type=text]').getAttribute('value');
+        let valueCity = document.querySelector('input[type=text]').getAttribute('value');
+        if (!valueCity) {valueCity = ' '};
         const valueGender = document.querySelector('select').value;
         const valueAgeMin = document.getElementById('year-min').value;
         const valueAgeMax = document.getElementById('year-max').value;
