@@ -121,6 +121,17 @@ const initialGirls = [
     },
     {
         "gender": "Девушка",
+        "name": "Лариса",
+        "photo": "larisa",
+        "age": 32,
+        "city": "Москва, Россия",
+        "isFavorite": false,
+        "isOnline": true,
+        "howManyPh": 12,
+        "isTop": false
+    },
+    {
+        "gender": "Девушка",
         "name": "Кариночка",
         "photo": "karinochka",
         "age": 28,
@@ -129,6 +140,28 @@ const initialGirls = [
         "isOnline": false,
         "howManyPh": 12,
         "isTop": true
+    },  
+    {
+        "gender": "Девушка",
+        "name": "Диана",
+        "photo": "diana",
+        "age": 20,
+        "city": "Самара, Россия",
+        "isFavorite": false,
+        "isOnline": true,
+        "howManyPh": 3,
+        "isTop": true
+    },
+    {
+        "gender": "Девушка",
+        "name": "Лариса",
+        "photo": "larisa",
+        "age": 32,
+        "city": "Москва, Россия",
+        "isFavorite": false,
+        "isOnline": true,
+        "howManyPh": 12,
+        "isTop": false
     },
     {
         "gender": "Девушка",
@@ -141,48 +174,15 @@ const initialGirls = [
         "howManyPh": 12,
         "isTop": true
     },
-    {
+{
         "gender": "Девушка",
-        "name": "Кариночка",
-        "photo": "karinochka",
-        "age": 28,
-        "city": "Санкт-Петербург, Россия",
+        "name": "Диана",
+        "photo": "diana",
+        "age": 20,
+        "city": "Самара, Россия",
         "isFavorite": false,
-        "isOnline": false,
-        "howManyPh": 12,
-        "isTop": true
-    },
-    {
-        "gender": "Девушка",
-        "name": "Кариночка",
-        "photo": "karinochka",
-        "age": 28,
-        "city": "Санкт-Петербург, Россия",
-        "isFavorite": false,
-        "isOnline": false,
-        "howManyPh": 12,
-        "isTop": true
-    },
-    {
-        "gender": "Девушка",
-        "name": "Кариночка",
-        "photo": "karinochka",
-        "age": 28,
-        "city": "Санкт-Петербург, Россия",
-        "isFavorite": false,
-        "isOnline": false,
-        "howManyPh": 12,
-        "isTop": true
-    },
-    {
-        "gender": "Девушка",
-        "name": "Кариночка",
-        "photo": "karinochka",
-        "age": 28,
-        "city": "Санкт-Петербург, Россия",
-        "isFavorite": false,
-        "isOnline": false,
-        "howManyPh": 12,
+        "isOnline": true,
+        "howManyPh": 3,
         "isTop": true
     },
     {
