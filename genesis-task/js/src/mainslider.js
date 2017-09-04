@@ -421,19 +421,6 @@ ready(() => {
     document.addEventListener("click", changePage, false);
     
     window.onresize = () => { //Перерисовываю поиск при изменении размеров окна браузера
-        // if(window.innerWidth < 480) {
-        //     onPageMax = 1;
-        //     maxPag = 0;
-        // } else if (window.innerWidth < 768) {
-        //     onPageMax = 2;
-        //     maxPag = 3;
-        // } else if (window.innerWidth < 1025) {
-        //     onPageMax = 6;
-        //     maxPag = 5;
-        // } else {
-        //     onPageMax = 8;
-        //     maxPag = 7;
-        // }
         maxGirls();
         showList();
         pageNow = 0;
