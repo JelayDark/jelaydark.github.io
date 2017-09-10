@@ -23,7 +23,7 @@ ready(
         };
         button.addEventListener('click', () => {
             loadURL("/datas-task/items.json");
-            console.log("the last: ", loadURL("/datas-task/items.json"));
+            console.log("the last: ", loadURL("/datas-task/items.json").responseText);
             // console.log(loadURL("/datas-task/items.json"));
         });
 
