@@ -20,8 +20,8 @@ ready(
             return oRequest.responseText;
         };
         button.addEventListener('click', () => {
-            loadURL("/../../items.json");
-            console.log(loadURL("../../items.json"));
+            loadURL("/items.json");
+            console.log(loadURL("/items.json"));
         });
 
 
