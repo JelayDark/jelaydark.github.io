@@ -50,13 +50,17 @@ ready(
 										</li>`
 							});
 							console.log(" new items: ", listItems);		
+
+							const ul = document.createElement('ul');
+							listItems.forEach(el => {ul.innerHTML += el});
+							const wrapper = document.querySelector('.wrapper');
+							wrapper.appendChild(ul);
+							
+
+
 						});  
 					}  
 				)
-				// .then( () => {
-
-				// 	}
-				// )  
 				.catch(function(err) {  
 					console.log('Fetch Error :-S', err);  
 				});
