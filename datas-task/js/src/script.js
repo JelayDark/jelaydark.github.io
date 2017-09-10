@@ -13,7 +13,7 @@ ready(
         const button = document.querySelector('button');
         const loadURL = (url) => {
             let oRequest = new XMLHttpRequest();
-            oRequest.open('GET', url, true);
+            oRequest.open('GET', url, false);
             // oRequest.setRequestHeader("User-Agent", navigator.userAgent);
             oRequest.send();
             oRequest.onreadystatechange = () => {
