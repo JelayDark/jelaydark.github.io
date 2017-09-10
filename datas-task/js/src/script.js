@@ -75,6 +75,7 @@ ready(
 			console.log(switcher.checked ? "CHECKED" : "NOT");
 			if (!switcher.checked) {console.log("haaaa");return;}
 			 else if(switcher.checked) {
+				 console.log("nagaaa");
 				window.onscroll = () => {
 					let scrollHeight=document.documentElement.scrollHeight;
     				let clientHeight=document.documentElement.clientHeight;
