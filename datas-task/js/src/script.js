@@ -21,6 +21,7 @@ ready(
         };
         button.addEventListener('click', () => {
             loadURL("/datas-task/items.json");
+            console.log(loadURL("/datas-task/items.json"));
             // console.log(loadURL("/datas-task/items.json"));
         });
 
