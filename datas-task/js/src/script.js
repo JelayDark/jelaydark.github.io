@@ -74,7 +74,7 @@ ready(
 		switcher.addEventListener("change", () => {
 			console.log(switcher.checked ? "CHECKED" : "NOT");
 			const FLAG = switcher.checked ? "CHECKED" : "NOT";
-			if (FLAG === "NOT") {console.log("haaaa");return;}
+			if (FLAG === "NOT") {window.onscroll = () => {console.log('HAA')}}
 			 else if(FLAG === "CHECKED") {
 				 console.log("nagaaa");
 				window.onscroll = () => {
