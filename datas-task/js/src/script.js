@@ -16,7 +16,7 @@ ready(
             oRequest.open('GET', url, true);
             // oRequest.setRequestHeader("User-Agent", navigator.userAgent);
             oRequest.send();
-            console.log(JSON.parse(oRequest.responseText));
+            console.log(oRequest);
             return oRequest.responseText;
         };
         button.addEventListener('click', () => {
