@@ -59,9 +59,13 @@ ready(() => {
 
 	const switcher = document.querySelector('input[type=checkbox]');
 	switcher.addEventListener("change", () => {
-		if (!switcher.checked) {window.onscroll = null;}
+		if (!switcher.checked) {
+			button.disabled = null;
+			window.onscroll = null;
+		}
 		else {
 			window.onscroll = () => {
+				button.disabled = disabled;
 				if(document.documentElement.scrollHeight - (window.pageYOffset + document.documentElement.clientHeight) <= 300) { // 300 = padding-bottom of page
 					addBlocks();
 				}

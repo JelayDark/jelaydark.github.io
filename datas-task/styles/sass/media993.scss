@@ -1,0 +1,20 @@
+@media(max-width: 994px) {
+    .wrapper {
+        .row {
+            .row-item {
+                width: calc((100% - 300px) / 2);
+                &:last-child {
+                    width: calc(100% - 141px);
+                    max-width: none;
+                    figure {
+                        text-align: center;
+                        img {
+                            max-width: 500px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
