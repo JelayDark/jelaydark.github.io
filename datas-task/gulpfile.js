@@ -4,9 +4,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const rename = require('gulp-rename');
 const cleanCSS = require('gulp-clean-css');
-// const sourcemaps = require('gulp-sourcemaps');
 const babel = require('gulp-babel');
-// const concat = require('gulp-concat');
 const uglify = require('gulp-uglifyjs');
 
 
@@ -24,14 +22,11 @@ gulp.task('sass:watch', () => {
 
 gulp.task('babel', () => {
     return gulp.src('./js/src/*.js')
-		// .pipe(sourcemaps.init())
 		.pipe(babel({
 			presets: ['es2015']
 		}))
-		// .pipe(concat('script.js'))
         .pipe(uglify())
         .pipe(rename({suffix: '.min'}))
-		// .pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest('./js/dist'))
 });
 
