@@ -17,7 +17,7 @@ ready(
             // oRequest.setRequestHeader("User-Agent", navigator.userAgent);
             oRequest.send();
             console.log(oRequest);
-            return JSON.parse(oRequest.responseText);
+            return oRequest.responseText;
         };
         button.addEventListener('click', () => {
             loadURL("/datas-task/items.json");
