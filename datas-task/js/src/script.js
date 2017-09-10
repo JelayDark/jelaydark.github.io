@@ -73,6 +73,7 @@ ready(
 		// console.log(switcher.checked ? "CHECKED" : "NOT");
 		switcher.addEventListener("change", () => {
 			console.log(switcher.checked ? "CHECKED" : "NOT");
+			if (!switcher.checked) {return}
 			if(switcher.checked) {
 				window.onscroll = () => {
 					let scrollHeight=document.documentElement.scrollHeight;
