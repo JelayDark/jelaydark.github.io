@@ -30,7 +30,7 @@ ready(
 								return `
 										<li class="row-item">
 											<figure>
-												<img src="../../img/${item.image}.jpg" alt="image">
+												<img src="img/${item.image}.jpg" alt="image">
 												<div class="stars">
 													<div class="star blackstar"></div>
 													<div class="star blackstar"></div>
@@ -52,6 +52,7 @@ ready(
 							console.log(" new items: ", listItems);		
 
 							const ul = document.createElement('ul');
+							ul.classList.add('row');
 							listItems.forEach(el => {ul.innerHTML += el});
 							const wrapper = document.querySelector('.wrapper');
 							wrapper.appendChild(ul);
