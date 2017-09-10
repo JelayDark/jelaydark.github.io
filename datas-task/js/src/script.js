@@ -13,7 +13,7 @@ ready(
         const button = document.querySelector('button');
         const loadURL = (url) => {
             let oRequest = new XMLHttpRequest();
-            oRequest.open('GET', url, false);
+            oRequest.open('GET', url, true);
             // oRequest.setRequestHeader("User-Agent", navigator.userAgent);
             oRequest.send(null);
             console.log(oRequest.responseText);
@@ -21,7 +21,7 @@ ready(
         };
         button.addEventListener('click', () => {
             loadURL("/../../items.json");
-            conole.log(loadURL("../../items.json"));
+            console.log(loadURL("../../items.json"));
         });
 
 
