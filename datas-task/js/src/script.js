@@ -11,21 +11,8 @@ function ready(fn) {
 ready(
    () => {
         const button = document.querySelector('button');
-        // const loadURL = (url) => {
-        //     let oRequest = new XMLHttpRequest();
-        //     oRequest.open('GET', url, true);
-        //     // oRequest.setRequestHeader("User-Agent", navigator.userAgent);
-        //     oRequest.send();
-        //     oRequest.onreadystatechange = () => {
-        //       console.log("RESPONSETEXT", oRequest.responseText);
-        //       console.log("PARSED", JSON.parse(oRequest.responseText));
-        //       return JSON.parse(oRequest.responseText);
-        //     }
-        // }; OLD
         button.addEventListener('click', () => {
-			let items;
-            // const items = loadURL("/datas-task/items.json");
-            // console.log("items: ",items);
+			let items; //value of our items, plased in items.json file
 			fetch('/datas-task/items.json')
 				.then(  
 					function(response) {  
@@ -35,7 +22,7 @@ ready(
 							return;  
 						}
 						response.json().then(function(data) {  
-							console.log(data);  
+							// console.log(data);  
 							items = data;
 						});  
 					}  
@@ -43,7 +30,35 @@ ready(
 				.catch(function(err) {  
 					console.log('Fetch Error :-S', err);  
 				});
-        });
+			items.map(item => {
+				return `
+						<li class="row-item">
+							<figure>
+								<img src="../../img/${item.image}.jpg" alt="image">
+								<div class="stars">
+									<div class="star blackstar"></div>
+									<div class="star blackstar"></div>
+									<div class="star blackstar"></div>
+									<div class="star graystar"></div>
+									<div class="star graystar"></div>
+								</div>
+								<figcaption>
+									<h2>
+										${item.title}
+									</h2>
+									<p>
+										${item.paragraph}
+									</p>
+								</figcaption>
+							</figure>
+						</li>`
+			})
+			console.log("items: ", items);		
+
+
+		});
+
+
 
         
 
