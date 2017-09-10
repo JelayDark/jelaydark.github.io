@@ -17,11 +17,13 @@ ready(
             // oRequest.setRequestHeader("User-Agent", navigator.userAgent);
             oRequest.send();
             oRequest.onreadystatechange = () => {
+              console.log("RESPONSETEXT", oRequest.responseText);
+              console.log("PARSED", JSON.parse(oRequest.responseText));
               return oRequest.responseText;
             }
         };
         button.addEventListener('click', () => {
-            const items = JSON.parse(loadURL("/datas-task/items.json"));
+            const items = loadURL("/datas-task/items.json");
             console.log("items: ",items);
         });
 
