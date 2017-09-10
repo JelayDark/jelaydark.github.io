@@ -19,7 +19,7 @@ ready(
             oRequest.onreadystatechange = () => {
               console.log("RESPONSETEXT", oRequest.responseText);
               console.log("PARSED", JSON.parse(oRequest.responseText));
-              return oRequest.responseText;
+              return JSON.parse(oRequest.responseText);
             }
         };
         button.addEventListener('click', () => {
