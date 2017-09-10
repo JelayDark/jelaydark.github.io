@@ -44,7 +44,7 @@ body {
     height: 100vh;
     background: url(../../img/background.jpg) center center no-repeat;
     background-size: cover;
-    padding: 100px 50px;
+    padding: 250px 50px;
 
 
     h2 {
@@ -65,10 +65,10 @@ body {
             height: 0;
         }
 
-        &-first {
-            position: relative;
-            top: 30vh;
-        }
+        // &-first {
+        //     position: relative;
+        //     top: 30vh;
+        // }
 
         .row-item {
             transition: all 1s;
