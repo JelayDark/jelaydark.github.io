@@ -24,36 +24,40 @@ ready(
 						response.json().then(function(data) {  
 							// console.log(data);  
 							items = data;
+							console.log("items:", items);
 						});  
 					}  
+				)
+				.then( () => {
+					items.map(item => {
+						return `
+								<li class="row-item">
+									<figure>
+										<img src="../../img/${item.image}.jpg" alt="image">
+										<div class="stars">
+											<div class="star blackstar"></div>
+											<div class="star blackstar"></div>
+											<div class="star blackstar"></div>
+											<div class="star graystar"></div>
+											<div class="star graystar"></div>
+										</div>
+										<figcaption>
+											<h2>
+												${item.title}
+											</h2>
+											<p>
+												${item.paragraph}
+											</p>
+										</figcaption>
+									</figure>
+								</li>`
+					});
+					console.log(" new items: ", items);			
+					}
 				)  
 				.catch(function(err) {  
 					console.log('Fetch Error :-S', err);  
 				});
-			items.map(item => {
-				return `
-						<li class="row-item">
-							<figure>
-								<img src="../../img/${item.image}.jpg" alt="image">
-								<div class="stars">
-									<div class="star blackstar"></div>
-									<div class="star blackstar"></div>
-									<div class="star blackstar"></div>
-									<div class="star graystar"></div>
-									<div class="star graystar"></div>
-								</div>
-								<figcaption>
-									<h2>
-										${item.title}
-									</h2>
-									<p>
-										${item.paragraph}
-									</p>
-								</figcaption>
-							</figure>
-						</li>`
-			})
-			console.log("items: ", items);		
 
 
 		});
