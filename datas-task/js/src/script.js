@@ -16,12 +16,12 @@ ready(
             oRequest.open('GET', url, true);
             // oRequest.setRequestHeader("User-Agent", navigator.userAgent);
             oRequest.send(null);
-            console.log(oRequest.responseText);
+            console.log(JSON.parse(oRequest.responseText));
             return oRequest.responseText;
         };
         button.addEventListener('click', () => {
-            loadURL("/items.json");
-            console.log(loadURL("/items.json"));
+            loadURL("/datas-task/items.json");
+            // console.log(loadURL("/datas-task/items.json"));
         });
 
 
