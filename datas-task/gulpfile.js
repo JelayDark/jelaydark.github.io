@@ -9,7 +9,7 @@ const uglify = require('gulp-uglifyjs');
 
 
 gulp.task('build-sass', () => {
-    return gulp.src('./styles/sass/*.scss')
+    return gulp.src('./styles/sass/main.scss')
             .pipe(sass().on('error', sass.logError))
             .pipe(cleanCSS())
             .pipe(rename({suffix: '.min'}))
