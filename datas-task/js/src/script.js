@@ -13,6 +13,7 @@ ready(
         const button = document.querySelector('button');
         button.addEventListener('click', () => {
 			let items; //value of our items, plased in items.json file
+			let listItems;
 			fetch('/datas-task/items.json')
 				.then(  
 					function(response) {  
@@ -25,36 +26,37 @@ ready(
 							// console.log(data);  
 							items = data;
 							console.log("items:", items);
+							listItems = items.map(item => {
+								return `
+										<li class="row-item">
+											<figure>
+												<img src="../../img/${item.image}.jpg" alt="image">
+												<div class="stars">
+													<div class="star blackstar"></div>
+													<div class="star blackstar"></div>
+													<div class="star blackstar"></div>
+													<div class="star graystar"></div>
+													<div class="star graystar"></div>
+												</div>
+												<figcaption>
+													<h2>
+														${item.title}
+													</h2>
+													<p>
+														${item.paragraph}
+													</p>
+												</figcaption>
+											</figure>
+										</li>`
+							});
+							console.log(" new items: ", items);		
 						});  
 					}  
 				)
-				.then( () => {
-					items.map(item => {
-						return `
-								<li class="row-item">
-									<figure>
-										<img src="../../img/${item.image}.jpg" alt="image">
-										<div class="stars">
-											<div class="star blackstar"></div>
-											<div class="star blackstar"></div>
-											<div class="star blackstar"></div>
-											<div class="star graystar"></div>
-											<div class="star graystar"></div>
-										</div>
-										<figcaption>
-											<h2>
-												${item.title}
-											</h2>
-											<p>
-												${item.paragraph}
-											</p>
-										</figcaption>
-									</figure>
-								</li>`
-					});
-					console.log(" new items: ", items);			
-					}
-				)  
+				// .then( () => {
+
+				// 	}
+				// )  
 				.catch(function(err) {  
 					console.log('Fetch Error :-S', err);  
 				});
