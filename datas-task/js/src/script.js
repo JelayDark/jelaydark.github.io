@@ -49,7 +49,7 @@ ready(
 											</figure>
 										</li>`
 							});
-							console.log(" new items: ", items);		
+							console.log(" new items: ", listItems);		
 						});  
 					}  
 				)
