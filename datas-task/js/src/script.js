@@ -16,17 +16,13 @@ ready(
             oRequest.open('GET', url, true);
             // oRequest.setRequestHeader("User-Agent", navigator.userAgent);
             oRequest.send();
-            console.log("oRequest:", oRequest);
             oRequest.onreadystatechange = () => {
-              console.log("oRequest.responseText",oRequest.responseText);
-
-            return oRequest;
+              return oRequest.responseText;
             }
         };
         button.addEventListener('click', () => {
-            loadURL("/datas-task/items.json");
-            console.log("the last: ", loadURL("/datas-task/items.json").responseText);
-            // console.log(loadURL("/datas-task/items.json"));
+            const items = JSON.parse(loadURL("/datas-task/items.json"));
+            console.log("items: ",items);
         });
 
 
