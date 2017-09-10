@@ -29,16 +29,23 @@ ready(
 
         
         fetch('/datas-task/items.json')
-          .then(function(response) {
-            alert(response.headers.get('Content-Type')); // application/json; charset=utf-8
-            alert(response.status); // 200
+          	.then(  
+				function(response) {  
+				if (response.status !== 200) {  
+					console.log('Looks like there was a problem. Status Code: ' +  
+					response.status);  
+					return;  
+				}
 
-            return response.json();
-          })
-          .then(function(user) {
-            alert(user.name); // iliakan
-          })
-          .catch( alert );
+				// Examine the text in the response  
+				response.json().then(function(data) {  
+					console.log(data);  
+				});  
+				}  
+			)  
+			.catch(function(err) {  
+				console.log('Fetch Error :-S', err);  
+			});
 
 
 
