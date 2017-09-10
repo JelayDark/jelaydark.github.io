@@ -15,7 +15,7 @@ ready(
             let oRequest = new XMLHttpRequest();
             oRequest.open('GET', url, true);
             // oRequest.setRequestHeader("User-Agent", navigator.userAgent);
-            oRequest.send(null);
+            oRequest.send();
             console.log(JSON.parse(oRequest.responseText));
             return oRequest.responseText;
         };
