@@ -73,8 +73,8 @@ ready(
 		// console.log(switcher.checked ? "CHECKED" : "NOT");
 		switcher.addEventListener("change", () => {
 			console.log(switcher.checked ? "CHECKED" : "NOT");
-			if (!switcher.checked) {return}
-			if(switcher.checked) {
+			if (!switcher.checked) {console.log("haaaa");return;}
+			 else if(switcher.checked) {
 				window.onscroll = () => {
 					let scrollHeight=document.documentElement.scrollHeight;
     				let clientHeight=document.documentElement.clientHeight;
@@ -121,7 +121,7 @@ ready(
 													</figure>
 												</li>`
 									});
-									console.log(" new items: ", listItems);		
+									// console.log(" new items: ", listItems);		
 
 									const ul = document.createElement('ul');
 									ul.classList.add('row');
