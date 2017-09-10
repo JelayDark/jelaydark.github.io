@@ -72,22 +72,10 @@ ready(
 		const switcher = document.querySelector('input[type=checkbox]');
 		// console.log(switcher.checked ? "CHECKED" : "NOT");
 		switcher.addEventListener("change", () => {
-			console.log(switcher.checked ? "CHECKED" : "NOT");
-			const FLAG = switcher.checked ? "CHECKED" : "NOT";
-			if (FLAG === "NOT") {window.onscroll = () => {console.log('HAA')}}
-			 else if(FLAG === "CHECKED") {
-				 console.log("nagaaa");
+			if (!switcher.checked) {window.onscroll = null;}
+			else {
 				window.onscroll = () => {
-					let scrollHeight=document.documentElement.scrollHeight;
-    				let clientHeight=document.documentElement.clientHeight;
-					// let height=scrollHeight+clientHeight;
-					// console.log('scrollHeight:', scrollHeight, "clientHeight :",clientHeight, "height: ",  height);
-					let scrollTopA = window.pageYOffset;
-					// let scrollTopB = document.documentElement.scrollTop;
-					// let scrollTopC = document.body.scrollTop;
-					// console.log("scrollTopA",scrollTopA , "scrollTopB", scrollTopB, "scrollTopC", scrollTopC);
-
-					if(window.pageYOffset+document.documentElement.clientHeight === document.documentElement.scrollHeight) {
+					if(document.documentElement.scrollHeight - (window.pageYOffset + document.documentElement.clientHeight) <= 300) {
 						fetch('/datas-task/items.json')
 						.then(  
 							function(response) {  
