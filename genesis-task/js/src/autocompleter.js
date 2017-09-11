@@ -81,6 +81,8 @@ ready(() => {
             input.focus();
         } else {
             if(e.target.classList.contains('result-item')) {
+                console.log(e.target.innerHTML);
+                input.value = e.target.innerHTML;
                 input.setAttribute('value', e.target.innerHTML);
             }
             cityResult.innerHTML = '';
